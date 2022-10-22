@@ -29,11 +29,18 @@ namespace producer.Controllers
 
         public IActionResult Index()
         {
-            //Document document = new Document(@"C:\test\ims.pdf");
-
-            //// Save document in docx format
-            //document.Save(@"C:\test\ims.docx", SaveFormat.DocX);
+     
             return View();
+        }
+        public IActionResult PDFView(string fullName)
+        {
+            var docBytes = System.IO.File.ReadAllBytes(fullName);
+
+            Document document = new Document(fullName);
+            string fullpath = Path.GetDirectoryName(fullName);
+            // Save document in docx format
+            document.Save(fullpath + "/" + "test.docx", SaveFormat.DocX);
+            return new JsonResult("Saved!");
         }
 
         public IActionResult Privacy()
