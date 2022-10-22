@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Szg4hVDmabPGIpUxcJ1q89ayhR4wmENFQlJRemQjuoVQRUxP9iy2DRqbaRFljgQpOwr36lT0hJJlR2dx0UdFcw==",
+  "dgSpecHash": "czDqbOJluL1xVbiNNm4lM98oDJ4EjRATZPJI/F/0EO8phW84nXTOZk4tL7ibWGUbuHfPveRgKV05b2PrwfKeJA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\source\\repos\\producer\\producer\\producer.csproj",
+  "projectFilePath": "C:\\Testing\\producer\\producer\\producer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

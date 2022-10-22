@@ -6,10 +6,10 @@
 
   <ItemGroup>
     <Reference Include="Aspose.PDF">
-      <HintPath>..\..\..\..\Videos\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.PDF.dll</HintPath>
+      <HintPath>..\..\..\Users\User\Videos\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.PDF.dll</HintPath>
     </Reference>
     <Reference Include="GemBox.Document">
-      <HintPath>..\..\..\..\Pictures\GemBox.Bundle_v45.0.1010_Downloadly.ir\GemBox.Bundle.45.0.1010\lib\netstandard2.0\GemBox.Document.dll</HintPath>
+      <HintPath>..\..\..\Users\User\Pictures\GemBox.Bundle_v45.0.1010_Downloadly.ir\GemBox.Bundle.45.0.1010\lib\netstandard2.0\GemBox.Document.dll</HintPath>
     </Reference>
   </ItemGroup>
 
