@@ -5,6 +5,6 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\Testing\producer\producer\bin\Release\net5.0\publish\</_PublishTargetUrl>
-    <History>True|2022-10-22T15:45:23.4330298Z;</History>
+    <History>True|2022-10-22T15:50:39.2376355Z;True|2022-10-22T17:45:23.4330298+02:00;</History>
   </PropertyGroup>
 </Project>
