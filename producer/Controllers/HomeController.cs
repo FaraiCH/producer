@@ -39,7 +39,7 @@ namespace producer.Controllers
             Document document = new Document(fullName);
             string fullpath = Path.GetDirectoryName(fullName);
             // Save document in docx format
-            document.Save(fullpath + "/" + "test.docx", SaveFormat.DocX);
+            document.Save(fullpath + "/" + "Paper.docx", SaveFormat.DocX);
             return new JsonResult("Saved!");
         }
 
