@@ -62,8 +62,18 @@ namespace producer.Controllers
 
             Document document = new Document(fullName);
             string fullpath = Path.GetDirectoryName(fullName);
+            DocSaveOptions saveOptions = new DocSaveOptions
+            {
+                Format = DocSaveOptions.DocFormat.Doc,
+                // Set the recognition mode as Flow
+                Mode = DocSaveOptions.RecognitionMode.Flow,
+                // Set the Horizontal proximity as 2.5
+                RelativeHorizontalProximity = 2.5f,
+                // Enable the value to recognize bullets during conversion process
+                RecognizeBullets = true
+            };
             // Save document in docx format
-            document.Save(fullpath + "/" + "Paper.html", SaveFormat.Html);
+            document.Save(fullpath + "/" + "Paper.doc", saveOptions);
             return new JsonResult("Saved!");
         }
 
