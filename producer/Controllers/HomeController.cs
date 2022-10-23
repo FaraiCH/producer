@@ -65,23 +65,11 @@ namespace producer.Controllers
                 DocSaveOptions saveOptions = new DocSaveOptions
                 {
                     Format = DocSaveOptions.DocFormat.Doc,
-                    // Set the recognition mode as Flow
-                    Mode = DocSaveOptions.RecognitionMode.Flow,
-                    // Set the Horizontal proximity as 2.5
-                    RelativeHorizontalProximity = 2.5f,
-                    // Enable the value to recognize bullets during conversion process
-                    RecognizeBullets = true
                 };
-                TextAbsorber textAbsorber = new TextAbsorber();
-                // Accept the absorber for all the pages
-                document.Pages.Accept(textAbsorber);
-                // Get the extracted text
-                string extractedText = textAbsorber.Text;
-                // Create a writer and open the file
+                FontRepository.Sources.Add(new FolderFontSource("/var/www/html/fonts"));
 
-                //// Save document in docx format
-                //document.Save(fullpath + "/" + "Paper.doc", saveOptions);
-                return new JsonResult(extractedText);
+                document.Save(fullpath + "/" + "Paper.doc", saveOptions);
+                return new JsonResult("Saved!");
             }
             catch (Exception ex)
             {
