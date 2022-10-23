@@ -42,7 +42,9 @@ C:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\producer.deps.json
 C:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\producer.runtimeconfig.json
 C:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\producer.pdb
 C:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\Aspose.PDF.dll
+C:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\Aspose.Words.dll
 C:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\GemBox.Document.dll
+C:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\Aspose.Words.xml
 C:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\GemBox.Document.xml
 C:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\producer.Views.dll
 C:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\producer.Views.pdb

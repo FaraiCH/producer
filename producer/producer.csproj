@@ -8,6 +8,9 @@
     <Reference Include="Aspose.PDF">
       <HintPath>..\..\..\Users\User\Videos\Aspose.Total_dll_only_Downloadly.ir\netstandard2.1\Aspose.PDF.dll</HintPath>
     </Reference>
+    <Reference Include="Aspose.Words">
+      <HintPath>..\..\..\Users\User\Videos\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.Words.dll</HintPath>
+    </Reference>
     <Reference Include="GemBox.Document">
       <HintPath>..\..\..\Users\User\Pictures\GemBox.Bundle_v45.0.1010_Downloadly.ir\GemBox.Bundle.45.0.1010\lib\netstandard2.0\GemBox.Document.dll</HintPath>
     </Reference>

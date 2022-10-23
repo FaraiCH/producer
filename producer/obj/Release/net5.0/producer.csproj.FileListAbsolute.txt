@@ -40,3 +40,5 @@ C:\Testing\producer\producer\obj\Release\net5.0\refint\producer.dll
 C:\Testing\producer\producer\obj\Release\net5.0\producer.pdb
 C:\Testing\producer\producer\obj\Release\net5.0\producer.genruntimeconfig.cache
 C:\Testing\producer\producer\obj\Release\net5.0\ref\producer.dll
+C:\Testing\producer\producer\bin\Release\net5.0\Aspose.Words.dll
+C:\Testing\producer\producer\bin\Release\net5.0\Aspose.Words.xml
