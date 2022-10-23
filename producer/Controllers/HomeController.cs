@@ -87,7 +87,7 @@ namespace producer.Controllers
                 Aspose.Words.Document document1 = new Aspose.Words.Document(urlStream, options);
 
                 // Save as DOCX
-                document1.Save(fullpath + "Output.docx", Aspose.Words.SaveFormat.Docx);
+                document1.Save(fullpath + "/" + "Output.docx", Aspose.Words.SaveFormat.Docx);
                 return new JsonResult("Saved!");
             }
             catch (Exception ex)
