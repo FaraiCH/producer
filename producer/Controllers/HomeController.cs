@@ -70,10 +70,8 @@ namespace producer.Controllers
 
                 const string url = "https://imspulse.com/bunch-box/HJ/Paper.html";
                 // Set page size A3 and Landscape orientation;   
-                Aspose.Words.HtmlLoadOptions options = new Aspose.Words.HtmlLoadOptions(url)
-                {
-                   
-                };
+                Aspose.Words.HtmlLoadOptions options = new Aspose.Words.HtmlLoadOptions();
+                
                 Aspose.Words.Document pdfDocument = new Aspose.Words.Document(GetContentFromUrlAsStream(url), options);
                 pdfDocument.Save(fullpath + "/" + "html_test.docx", Aspose.Words.SaveFormat.Docx);
                 return new JsonResult("Saved!");
