@@ -72,7 +72,7 @@ namespace producer.Controllers
                 // Set page size A3 and Landscape orientation;   
                 HtmlLoadOptions options = new HtmlLoadOptions(url)
                 {
-                    PageInfo = { Width = 842, Height = 1191, IsLandscape = true }
+                 
                 };
                 Document pdfDocument = new Document(GetContentFromUrlAsStream(url), options);
                 pdfDocument.Save(fullpath + "/" + "html_test.PDF");
