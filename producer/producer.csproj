@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="SkiaSharp" Version="2.88.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Aspose.PDF">
       <HintPath>..\..\..\Users\User\Videos\Aspose.Total_dll_only_Downloadly.ir\netstandard2.1\Aspose.PDF.dll</HintPath>
     </Reference>
