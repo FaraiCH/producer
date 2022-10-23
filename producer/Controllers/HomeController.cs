@@ -1,4 +1,5 @@
 ﻿using Aspose.Pdf;
+using Aspose.Pdf.Text;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -71,9 +72,16 @@ namespace producer.Controllers
                     // Enable the value to recognize bullets during conversion process
                     RecognizeBullets = true
                 };
+                TextAbsorber textAbsorber = new TextAbsorber();
+                // Accept the absorber for all the pages
+                document.Pages.Accept(textAbsorber);
+                // Get the extracted text
+                string extractedText = textAbsorber.Text;
+                // Create a writer and open the file
+
                 //// Save document in docx format
                 //document.Save(fullpath + "/" + "Paper.doc", saveOptions);
-                return new JsonResult("Saved!");
+                return new JsonResult(extractedText);
             }
             catch (Exception ex)
             {
