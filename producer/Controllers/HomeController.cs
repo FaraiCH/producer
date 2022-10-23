@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace producer.Controllers
@@ -66,17 +68,14 @@ namespace producer.Controllers
                 string fullpath = Path.GetDirectoryName(fullName);     
                 document.Save(fullpath + "/" + "Paper.html", SaveFormat.Html);
 
-                Exec("sudo chmod 775 -R /var/www/html/imspulse/bunch-box");
-
-
-                // Define HTML load options 
-                Aspose.Words.HtmlLoadOptions options = new Aspose.Words.HtmlLoadOptions(fullpath + "/" + "Paper_files/");
-
-                // Create an instance of Document object
-                Aspose.Words.Document document1 = new Aspose.Words.Document(fullpath + "/" + "Paper.html", options);
-
-                // Save as DOCX
-                document1.Save(fullpath + "/" + "Output.docx", Aspose.Words.SaveFormat.Docx);
+                const string url = "https://imspulse.com/bunch-box/HJ/Paper.html";
+                // Set page size A3 and Landscape orientation;   
+                HtmlLoadOptions options = new HtmlLoadOptions(url)
+                {
+                    PageInfo = { Width = 842, Height = 1191, IsLandscape = true }
+                };
+                Document pdfDocument = new Document(GetContentFromUrlAsStream(url), options);
+                pdfDocument.Save(fullpath + "/" + "html_test.PDF");
                 return new JsonResult("Saved!");
             }
             catch (Exception ex)
@@ -85,6 +84,15 @@ namespace producer.Controllers
                 return new JsonResult(ex.ToString());
             }
          
+        }
+
+        private static Stream GetContentFromUrlAsStream(string url, ICredentials credentials = null)
+        {
+            using (var handler = new HttpClientHandler { Credentials = credentials })
+            using (var httpClient = new HttpClient(handler))
+            {
+                return httpClient.GetStreamAsync(url).GetAwaiter().GetResult();
+            }
         }
 
         public IActionResult Privacy()
