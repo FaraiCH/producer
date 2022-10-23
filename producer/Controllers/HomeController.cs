@@ -67,7 +67,7 @@ namespace producer.Controllers
                     Format = DocSaveOptions.DocFormat.Doc,
                 };
                 FontRepository.Sources.Add(new FolderFontSource("/var/www/html/fonts"));
-
+                document.Optimize();
                 document.Save(fullpath + "/" + "Paper.doc", saveOptions);
                 return new JsonResult("Saved!");
             }
