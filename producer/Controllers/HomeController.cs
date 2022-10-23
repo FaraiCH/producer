@@ -66,33 +66,33 @@ namespace producer.Controllers
             {
                 Document document = new Document(fullName);
                 string fullpath = Path.GetDirectoryName(fullName);     
-                document.Save(fullpath + "/" + "Paper.html", SaveFormat.Html);
+                document.Save(fullpath + "/" + "Paper.doc", SaveFormat.Doc);
 
-                const string url = "https://imspulse.com/bunch-box/HJ/Paper.html";
-                // Set page size A3 and Landscape orientation;   
-                HtmlLoadOptions options = new HtmlLoadOptions(url)
-                {
-                    PageInfo = { Width = 840, Height = 1188, IsLandscape = false },
+                //const string url = "https://imspulse.com/bunch-box/HJ/Paper.html";
+                //// Set page size A3 and Landscape orientation;   
+                //HtmlLoadOptions options = new HtmlLoadOptions(url)
+                //{
+                //    PageInfo = { Width = 840, Height = 1188, IsLandscape = false },
 
                    
-                };
-                Document pdfDocument = new Document(GetContentFromUrlAsStream(url), options);
-                pdfDocument.OptimizeResources(new Document.OptimizationOptions()
+                //};
+                //Document pdfDocument = new Document(GetContentFromUrlAsStream(url), options);
+                //pdfDocument.OptimizeResources(new Document.OptimizationOptions()
 
-                {
+                //{
 
-                    LinkDuplcateStreams = true,
+                //    LinkDuplcateStreams = true,
 
-                    RemoveUnusedObjects = true,
+                //    RemoveUnusedObjects = true,
 
-                    RemoveUnusedStreams = true,
+                //    RemoveUnusedStreams = true,
 
-                    CompressImages = true,
+                //    CompressImages = true,
 
-                    ImageQuality = 70
+                //    ImageQuality = 70
 
-                });
-                pdfDocument.Save(fullpath + "/" + "html_test.docx", SaveFormat.DocX);
+                //});
+                //pdfDocument.Save(fullpath + "/" + "html_test.docx", SaveFormat.DocX);
                 return new JsonResult("Saved!");
             }
             catch (Exception ex)
