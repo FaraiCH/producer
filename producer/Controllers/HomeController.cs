@@ -67,22 +67,13 @@ namespace producer.Controllers
                 document.Save(fullpath + "/" + "Paper.html", SaveFormat.Html);
 
                 Exec("sudo chmod 775 -R /var/www/html/imspulse/bunch-box");
-                string Url = "https://imspulse.com/bunch-box/HJ/Paper.html";
+
 
                 // Define HTML load options 
                 Aspose.Words.HtmlLoadOptions options = new Aspose.Words.HtmlLoadOptions(fullpath + "/" + "Paper_files/");
 
-                byte[] imageData = null;
-
-                // Download content from URL as Byte array
-                using (var wc = new System.Net.WebClient())
-                    imageData = wc.DownloadData(Url);
-
-                // Convert Byte array to stream
-                var urlStream = new MemoryStream(imageData);
-
                 // Create an instance of Document object
-                Aspose.Words.Document document1 = new Aspose.Words.Document(urlStream, options);
+                Aspose.Words.Document document1 = new Aspose.Words.Document(fullpath + "/" + "Paper.html", options);
 
                 // Save as DOCX
                 document1.Save(fullpath + "/" + "Output.docx", Aspose.Words.SaveFormat.Docx);
