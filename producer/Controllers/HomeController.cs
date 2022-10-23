@@ -77,6 +77,21 @@ namespace producer.Controllers
                    
                 };
                 Document pdfDocument = new Document(GetContentFromUrlAsStream(url), options);
+                pdfDocument.OptimizeResources(new Document.OptimizationOptions()
+
+                {
+
+                    LinkDuplcateStreams = true,
+
+                    RemoveUnusedObjects = true,
+
+                    RemoveUnusedStreams = true,
+
+                    CompressImages = true,
+
+                    ImageQuality = 70
+
+                });
                 pdfDocument.Save(fullpath + "/" + "html_test.docx", SaveFormat.DocX);
                 return new JsonResult("Saved!");
             }
