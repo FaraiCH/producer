@@ -64,11 +64,11 @@ namespace producer.Controllers
                 string fullpath = Path.GetDirectoryName(fullName);
                 DocSaveOptions saveOptions = new DocSaveOptions
                 {
-                    Format = DocSaveOptions.DocFormat.Doc,
+                    Format = DocSaveOptions.DocFormat.DocX,
                 };
                 FontRepository.Sources.Add(new FolderFontSource("/var/www/html/fonts"));
-                document.Optimize();
-                document.Save(fullpath + "/" + "Paper.doc", saveOptions);
+ 
+                document.Save(fullpath + "/" + "Paper.docx", saveOptions);
                 return new JsonResult("Saved!");
             }
             catch (Exception ex)
