@@ -62,7 +62,7 @@ namespace producer.Controllers
             {
                 Document document = new Document(fullName);
                 string fullpath = Path.GetDirectoryName(fullName);     
-                document.Save(fullpath + "/" + "Paper.docx", SaveFormat.DocX);
+                document.Save(fullpath + "/" + "Paper.html", SaveFormat.Html);
                 return new JsonResult("Saved!");
             }
             catch (Exception ex)
