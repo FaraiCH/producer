@@ -57,8 +57,6 @@ namespace producer.Controllers
 
             Stream stream4 = new MemoryStream(Convert.FromBase64String(LData));
             new Aspose.Pdf.License().SetLicense(stream4);
-
-            var docBytes = System.IO.File.ReadAllBytes(fullName);
             try
             {
                 Document document = new Document(fullName);
@@ -80,7 +78,7 @@ namespace producer.Controllers
             catch (Exception ex)
             {
 
-                return new JsonResult(ex.Message);
+                return new JsonResult(ex.ToString());
             }
          
         }
