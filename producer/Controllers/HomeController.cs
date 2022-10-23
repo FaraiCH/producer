@@ -61,10 +61,7 @@ namespace producer.Controllers
             try
             {
                 Document document = new Document(fullName);
-                string fullpath = Path.GetDirectoryName(fullName);
-
-                FontRepository.Sources.Add(new FolderFontSource("/var/www/html/fonts"));
-        
+                string fullpath = Path.GetDirectoryName(fullName);     
                 document.Save(fullpath + "/" + "Paper.docx", SaveFormat.DocX);
                 return new JsonResult("Saved!");
             }
