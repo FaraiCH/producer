@@ -69,7 +69,7 @@ namespace producer.Controllers
                 string Url = "https://imspulse.com/bunch-box/HJ/Paper.html";
 
                 // Define HTML load options 
-                Aspose.Words.HtmlLoadOptions options = new Aspose.Words.HtmlLoadOptions(fullpath + "/" + "Paper_files");
+                Aspose.Words.HtmlLoadOptions options = new Aspose.Words.HtmlLoadOptions("https://imspulse.com/bunch-box/HJ/Paper_files");
 
                 byte[] imageData = null;
 
@@ -81,7 +81,7 @@ namespace producer.Controllers
                 var urlStream = new MemoryStream(imageData);
 
                 // Create an instance of Document object
-                Aspose.Words.Document document1 = new Aspose.Words.Document(fullpath + "/" + "Paper.html", options);
+                Aspose.Words.Document document1 = new Aspose.Words.Document(urlStream, options);
 
                 // Save as DOCX
                 document1.Save(fullpath + "/" + "Output.docx", Aspose.Words.SaveFormat.Docx);
