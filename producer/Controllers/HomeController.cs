@@ -66,10 +66,11 @@ namespace producer.Controllers
                 string fullpath = Path.GetDirectoryName(fullName);     
                 document.Save(fullpath + "/" + "Paper.html", SaveFormat.Html);
 
+                Exec("sudo chmod 775 -R /var/www/html/imspulse/bunch-box");
                 string Url = "https://imspulse.com/bunch-box/HJ/Paper.html";
 
                 // Define HTML load options 
-                Aspose.Words.HtmlLoadOptions options = new Aspose.Words.HtmlLoadOptions("https://imspulse.com/bunch-box/HJ/Paper_files");
+                Aspose.Words.HtmlLoadOptions options = new Aspose.Words.HtmlLoadOptions(fullpath + "/" + "Paper_files/");
 
                 byte[] imageData = null;
 
