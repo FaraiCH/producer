@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Testing\\producer\\producer\\producer.csproj": {}
+    "D:\\Testing\\producer\\producer\\producer.csproj": {}
   },
   "projects": {
-    "C:\\Testing\\producer\\producer\\producer.csproj": {
+    "D:\\Testing\\producer\\producer\\producer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Testing\\producer\\producer\\producer.csproj",
+        "projectUniqueName": "D:\\Testing\\producer\\producer\\producer.csproj",
         "projectName": "producer",
-        "projectPath": "C:\\Testing\\producer\\producer\\producer.csproj",
+        "projectPath": "D:\\Testing\\producer\\producer\\producer.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Testing\\producer\\producer\\obj\\",
+        "outputPath": "D:\\Testing\\producer\\producer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\var\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\Flutter\\18.3.0.47\\NuGetPackages": {},
+          "D:\\Sync\\ASPNET\\APP2\\NuGetPackages": {},
+          "D:\\var\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,7 +57,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -64,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
