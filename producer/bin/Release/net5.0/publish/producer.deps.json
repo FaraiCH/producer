@@ -35,8 +35,6 @@
         "dependencies": {
           "SkiaSharp": "2.88.3",
           "Aspose.PDF": "20.1.0.0",
-          "Aspose.Words": "20.1.0.0",
-          "GemBox.Document": "35.0.0.1130",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -380,28 +378,6 @@
         },
         "compile": {
           "Aspose.PDF.dll": {}
-        }
-      },
-      "Aspose.Words/20.1.0.0": {
-        "runtime": {
-          "Aspose.Words.dll": {
-            "assemblyVersion": "20.1.0.0",
-            "fileVersion": "20.1.0.0"
-          }
-        },
-        "compile": {
-          "Aspose.Words.dll": {}
-        }
-      },
-      "GemBox.Document/35.0.0.1130": {
-        "runtime": {
-          "GemBox.Document.dll": {
-            "assemblyVersion": "35.0.0.1130",
-            "fileVersion": "35.0.200.1130"
-          }
-        },
-        "compile": {
-          "GemBox.Document.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -2132,16 +2108,6 @@
       "hashPath": "skiasharp.nativeassets.win32.2.88.3.nupkg.sha512"
     },
     "Aspose.PDF/20.1.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Aspose.Words/20.1.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "GemBox.Document/35.0.0.1130": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
