@@ -64,7 +64,7 @@ namespace producer.Controllers
             try
             {
 
-                Document pdfDocument = new Document(fullName);
+                Document pdfDocument = new Document("/var/www/html/imspulse/bunch-box" + fullName);
                 DocSaveOptions saveOptions = new DocSaveOptions
                 {
                     Format = DocSaveOptions.DocFormat.DocX,
