@@ -52,7 +52,7 @@ namespace producer.Controllers
      
             return View();
         }
-        [HttpPost]
+        [HttpGet]
         public IActionResult PDFConvert(string fullName)
         {
             Exec("sudo chmod 775 -R /var/www/html/imspulse/bunch-box");
@@ -63,20 +63,20 @@ namespace producer.Controllers
             new Aspose.Pdf.License().SetLicense(stream4);
             try
             {
-                return Content("Meh");
-                //Document pdfDocument = new Document(fullName);
-                //DocSaveOptions saveOptions = new DocSaveOptions
-                //{
-                //    Format = DocSaveOptions.DocFormat.DocX,
-                //    // Set the recognition mode as Flow
-                //    Mode = DocSaveOptions.RecognitionMode.Flow,
-                //    // Set the Horizontal proximity as 2.5
-                //    RelativeHorizontalProximity = 2.5f,
-                //    // Enable the value to recognize bullets during conversion process
-                //    RecognizeBullets = true
-                //};
-                //pdfDocument.Save("/var/www/html/imspulse/bunch-box/tata.docx", saveOptions);
-              
+                return new JsonResult("Save");
+                Document pdfDocument = new Document(fullName);
+                DocSaveOptions saveOptions = new DocSaveOptions
+                {
+                    Format = DocSaveOptions.DocFormat.DocX,
+                    // Set the recognition mode as Flow
+                    Mode = DocSaveOptions.RecognitionMode.Flow,
+                    // Set the Horizontal proximity as 2.5
+                    RelativeHorizontalProximity = 2.5f,
+                    // Enable the value to recognize bullets during conversion process
+                    RecognizeBullets = true
+                };
+                pdfDocument.Save("/var/www/html/imspulse/bunch-box/tata.docx", saveOptions);
+
             }
             catch (Exception ex)
             {
