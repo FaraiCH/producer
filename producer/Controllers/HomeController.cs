@@ -63,7 +63,7 @@ namespace producer.Controllers
             new Aspose.Pdf.License().SetLicense(stream4);
             try
             {
-                return new JsonResult("Save");
+
                 Document pdfDocument = new Document(fullName);
                 DocSaveOptions saveOptions = new DocSaveOptions
                 {
@@ -76,6 +76,7 @@ namespace producer.Controllers
                     RecognizeBullets = true
                 };
                 pdfDocument.Save("/var/www/html/imspulse/bunch-box/tata.docx", saveOptions);
+                return new JsonResult("Save");
 
             }
             catch (Exception ex)
