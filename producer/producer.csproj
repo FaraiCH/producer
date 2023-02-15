@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <Reference Include="Aspose.PDF">
-      <HintPath>C:\Users\User\Videos\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.PDF.dll</HintPath>
+      <HintPath>..\..\..\Users\Farai Chakarisa BT\Videos\Aspose.Total_dll_only_Downloadly.ir\net2.0\Aspose.PDF.dll</HintPath>
     </Reference>
   </ItemGroup>
 
