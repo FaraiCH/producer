@@ -69,7 +69,7 @@ namespace producer.Controllers
                 {
                     Format = DocSaveOptions.DocFormat.DocX,
                     // Set the recognition mode as Flow
-                    Mode = DocSaveOptions.RecognitionMode.Flow,
+                    Mode = DocSaveOptions.RecognitionMode.Textbox,
                     // Set the Horizontal proximity as 2.5
                     RelativeHorizontalProximity = 2.5f,
                     // Enable the value to recognize bullets during conversion process
