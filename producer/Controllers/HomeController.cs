@@ -74,9 +74,7 @@ namespace producer.Controllers
                     RelativeHorizontalProximity = 2.5f,
                     // Enable the value to recognize bullets during conversion process
                     RecognizeBullets = true,   
-                };
-
-                saveOptions.TryMergeAdjacentSameBackgroundImages = true;          
+                };        
                 pdfDocument.Save("/var/www/html/imspulse/bunch-box/tata.doc", saveOptions);
                 return new JsonResult("Save");
 
