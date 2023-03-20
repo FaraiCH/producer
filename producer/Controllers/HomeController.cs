@@ -99,6 +99,8 @@ namespace producer.Controllers
             {
 
                 Document pdfDocument = new Document();
+                // Add page
+                Page page = pdfDocument.Pages.Add();
                 pdfDocument.Save(basepath + fullName);
                 return new JsonResult("Document Created Successfully");
 
