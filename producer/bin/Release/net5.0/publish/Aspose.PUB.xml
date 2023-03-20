@@ -1,0 +1,1132 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>Aspose.PUB</name>
+  </assembly>
+  <members>
+    <member name="T:Aspose.Pub.Document">
+      <summary>
+            Represents PUB document, holds all fields and relevant values
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.Document.SummaryInfo">
+      <summary>
+            Summary Info
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.Document.SetSummaryInfo(Aspose.Pub.SummaryInfo)">
+      <summary>
+            Sets summary info
+            </summary>
+      <param name="value">Summary Info value</param>
+    </member>
+    <member name="P:Aspose.Pub.Document.DocumentSummaryInfo">
+      <summary>
+            Document Summary Info
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.Document.SetDocSummaryInfo(Aspose.Pub.DocSummaryInfo)">
+      <summary>
+            Sets document summary info
+            </summary>
+      <param name="value">Document Summary Info value</param>
+    </member>
+    <member name="P:Aspose.Pub.Document.Width">
+      <summary>
+            Width of document in PUB metrics(EMUs)
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.Document.Height">
+      <summary>
+            Height of document in PUB metrics(EMUs)
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.Document.DefaultTextStyles">
+      <summary>
+            Array of default text styles
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.Document.AddDefaultTextStyle(Aspose.Pub.TextStyle)">
+      <summary>
+            Adds default text style
+            </summary>
+      <param name="value">text style</param>
+    </member>
+    <member name="P:Aspose.Pub.Document.DefaultParagraphStyles">
+      <summary>
+            Array of default paragraph styles
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.Document.AddDefaultParagraphStyle(Aspose.Pub.ParagraphStyle)">
+      <summary>
+            Adds default paragraph style
+            </summary>
+      <param name="value">paragraph style</param>
+    </member>
+    <member name="P:Aspose.Pub.Document.FieldCount">
+      <summary>
+            Count of all fields
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.Document.FontNames">
+      <summary>
+            Array of font names
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.Document.Colors">
+      <summary>
+            Array of colors
+            </summary>
+    </member>
+    <member name="T:Aspose.Pub.Exceptions.ConvertException">
+      <summary>
+            Exception for conversion cases
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.Exceptions.ConvertException.#ctor(System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.Pub.Exceptions.ConvertException" /> class.
+            </summary>
+      <param name="message">The message.</param>
+    </member>
+    <member name="M:Aspose.Pub.Exceptions.ConvertException.#ctor(System.String,System.Exception)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.Pub.Exceptions.ConvertException"></see> class with a specified error 
+            message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+      <param name="message">The error message that explains the reason for the exception. </param>
+      <param name="innerException">The exception that is the cause of the current exception, or 
+            a null reference (Nothing in Visual Basic) if no inner exception is specified. </param>
+    </member>
+    <member name="T:Aspose.Pub.Exceptions.NamespaceDoc">
+      <summary>
+            Namespace exceptions declares classes for exceptions in PUB area
+            </summary>
+    </member>
+    <member name="T:Aspose.Pub.Exceptions.PubFormatException">
+      <summary>
+            Exception for PUB format
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.Exceptions.PubFormatException.#ctor(System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.Pub.Exceptions.PubFormatException" /> class.
+            </summary>
+      <param name="message">The message.</param>
+    </member>
+    <member name="M:Aspose.Pub.Exceptions.PubFormatException.#ctor(System.String,System.Exception)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.Pub.Exceptions.PubFormatException"></see> class with a specified error 
+            message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+      <param name="message">The error message that explains the reason for the exception. </param>
+      <param name="innerException">The exception that is the cause of the current exception, or 
+            a null reference (Nothing in Visual Basic) if no inner exception is specified. </param>
+    </member>
+    <member name="T:Aspose.Pub.Exceptions.PubException">
+      <summary>
+            Represents errors that occur during PUB application execution.
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.Exceptions.PubException.#ctor(System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.Pub.Exceptions.PubException" /> class.
+            </summary>
+      <param name="message">The message.</param>
+    </member>
+    <member name="M:Aspose.Pub.Exceptions.PubException.#ctor(System.String,System.Exception)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.Pub.Exceptions.PubException"></see> class with a specified error 
+            message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+      <param name="message">The error message that explains the reason for the exception. </param>
+      <param name="innerException">The exception that is the cause of the current exception, or 
+            a null reference (Nothing in Visual Basic) if no inner exception is specified. </param>
+    </member>
+    <member name="P:Aspose.Pub.Exceptions.PubException.Message">
+      <summary>
+            Gets a message that describes the current exception.
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.Exceptions.PubException.StackTrace">
+      <summary>
+            Gets a string representation of the immediate frames on the call stack.
+            </summary>
+    </member>
+    <member name="T:Aspose.Pub.IPubParser">
+      <summary>
+            Declares functionality which parses publisher file and returns <see cref="T:Aspose.Pub.Document" /> object 
+            as result of parsing.
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.IPubParser.Parse">
+      <summary>
+            Parses publisher file and returns <see cref="T:Aspose.Pub.Document" />object as result of parsing.
+            </summary>
+      <returns>PUB document</returns>
+    </member>
+    <member name="T:Aspose.Pub.IPdfConvertor">
+      <summary>
+            Declares functionality to convert PUB document into PDF document
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.IPdfConvertor.ConvertToPdf(Aspose.Pub.Document,System.String)">
+      <summary>
+            Converts PUB document into PDF format and saves result as PDF file
+            </summary>
+      <param name="doc">PUB document</param>
+      <param name="fileName">name of PDF file</param>
+    </member>
+    <member name="M:Aspose.Pub.IPdfConvertor.ConvertToPdf(Aspose.Pub.Document,System.IO.Stream)">
+      <summary>
+            Converts PUB document into PDF format and saves result in stream passed
+            </summary>
+      <param name="doc">PUB document</param>
+      <param name="outputStream">output stream</param>
+    </member>
+    <member name="T:Aspose.Pub.MetaInfo">
+      <summary>
+            Base class for summary info objects
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.MetaInfo.RawByteOrder">
+      <summary>
+            Raw byte order
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.MetaInfo.IsLittleEndian">
+      <summary>
+            Is little endian
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.MetaInfo.Version">
+      <summary>
+            Version value
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.MetaInfo.SysID">
+      <summary>
+            System identifier
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.MetaInfo.Clsid">
+      <summary>
+            CLSID identifier
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.MetaInfo.FMTID">
+      <summary>
+            FMTID identifier
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.MetaInfo.PropsCount">
+      <summary>
+            Count of properties
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.MetaInfo.PropsIdentifiers">
+      <summary>
+            Identifiers of properties
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.MetaInfo.GetProperty(System.UInt32)">
+      <summary>
+            Gets property by ID passed
+            </summary>
+      <param name="id">property identifier</param>
+      <returns>property value</returns>
+    </member>
+    <member name="P:Aspose.Pub.MetaInfo.CodePage">
+      <summary>
+            Code page identifier
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.MetaInfo.Locale">
+      <summary>
+            Locale identifier
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.MetaInfo.GetStringByID(System.UInt32)">
+      <summary>
+            Gets string by ID
+            </summary>
+      <param name="id">string identifier</param>
+      <returns>string value</returns>
+    </member>
+    <member name="M:Aspose.Pub.MetaInfo.GetIntByID(System.UInt32)">
+      <summary>
+            Gets integer by ID
+            </summary>
+      <param name="id">integer identifier</param>
+      <returns>integer value</returns>
+    </member>
+    <member name="T:Aspose.Pub.SummaryInfo">
+      <summary>
+            Summary info
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.SummaryInfo.Title">
+      <summary>
+            The title of the document
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.SummaryInfo.SetTitle(System.String)">
+      <summary>
+            Sets title of the document
+            </summary>
+      <param name="value">The title of the document</param>
+    </member>
+    <member name="P:Aspose.Pub.SummaryInfo.Subject">
+      <summary>
+            The subject of the document
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.SummaryInfo.SetSubject(System.String)">
+      <summary>
+            Sets subject of the document
+            </summary>
+      <param name="value">The subject of the document</param>
+    </member>
+    <member name="P:Aspose.Pub.SummaryInfo.Author">
+      <summary>
+            The author of the document
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.SummaryInfo.SetAuthor(System.String)">
+      <summary>
+            Sets author of the document
+            </summary>
+      <param name="value">The author of the document</param>
+    </member>
+    <member name="P:Aspose.Pub.SummaryInfo.Keywords">
+      <summary>
+            Keywords related to the document
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.SummaryInfo.SetKeywords(System.String)">
+      <summary>
+            Sets keywords related to the document
+            </summary>
+      <param name="value">Keywords related to the document</param>
+    </member>
+    <member name="P:Aspose.Pub.SummaryInfo.Comments">
+      <summary>
+            Comments related the document
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.SummaryInfo.SetComments(System.String)">
+      <summary>
+            Sets comments related the document
+            </summary>
+      <param name="value">Comments related the document</param>
+    </member>
+    <member name="P:Aspose.Pub.SummaryInfo.LastAuthor">
+      <summary>
+            The last author of the document
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.SummaryInfo.SetLastAuthor(System.String)">
+      <summary>
+            Sets last author of the document
+            </summary>
+      <param name="value">The last author of the document</param>
+    </member>
+    <member name="P:Aspose.Pub.SummaryInfo.Template">
+      <summary>
+            Application-specific template from which the document was created
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.SummaryInfo.RevNumber">
+      <summary>
+            Application-specific revision number for this version of the document
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.SummaryInfo.AppName">
+      <summary>
+            The name of the application that was used to create the document
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.SummaryInfo.PageCount">
+      <summary>
+            The total number of pages in the document
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.SummaryInfo.WordCount">
+      <summary>
+            The total number of words in the document
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.SummaryInfo.CharCount">
+      <summary>
+            The total number of characters in the document
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.SummaryInfo.DocSecurity">
+      <summary>
+            The document security ID
+            Document security ID is a 32-bit signed integer representing a set of application-suggested 
+            access control flags with the following values: 
+            0x00000001: Password protected 
+            0x00000002: Read-only recommended
+            0x00000004: Read-only enforced
+            0x00000008: Locked for annotations
+            </summary>
+    </member>
+    <member name="T:Aspose.Pub.DocSummaryInfo">
+      <summary>
+            Document summary info
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.DocSummaryInfo.Category">
+      <summary>
+            Category
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.DocSummaryInfo.SetCategory(System.String)">
+      <summary>
+            Sets category
+            </summary>
+      <param name="value">category</param>
+    </member>
+    <member name="P:Aspose.Pub.DocSummaryInfo.Company">
+      <summary>
+            Company
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.DocSummaryInfo.SetCompany(System.String)">
+      <summary>
+            Sets company
+            </summary>
+      <param name="value">company</param>
+    </member>
+    <member name="P:Aspose.Pub.DocSummaryInfo.Language">
+      <summary>
+            Language value
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.DocSummaryInfo.SetLanguage(System.String)">
+      <summary>
+            Sets language
+            </summary>
+      <param name="value">language</param>
+    </member>
+    <member name="P:Aspose.Pub.DocSummaryInfo.UserDefinedProperties">
+      <summary>
+            User defined properties
+            </summary>
+    </member>
+    <member name="T:Aspose.Pub.NamespaceDoc">
+      <summary>
+            The <b>Aspose.Pub</b> namespace provides classes describing PUB objects. 
+            </summary>
+    </member>
+    <member name="T:Aspose.Pub.PubFactory">
+      <summary>
+            Factory for PUB objects
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.PubFactory.CreateParser(System.String)">
+      <summary>
+            Creates PUB parser for PUB file
+            </summary>
+      <param name="fileName">PUB file name</param>
+      <returns>PUB parser</returns>
+    </member>
+    <member name="M:Aspose.Pub.PubFactory.CreateParser(System.IO.Stream)">
+      <summary>
+            Creates PUB parser for PUB stream
+            </summary>
+      <param name="pubStream">stream with PUB data</param>
+      <returns>PUB parser</returns>
+    </member>
+    <member name="M:Aspose.Pub.PubFactory.CreatePdfConvertor">
+      <summary>
+            Creates PdfConvertor
+            </summary>
+      <returns>PdfConvertor</returns>
+    </member>
+    <member name="T:Aspose.Pub.License">
+      <summary>
+            Provides methods to license the component.
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.License.SetLicense(System.String)">
+      <summary>
+            Licenses the component.
+            </summary>
+      <remarks>
+        <p>Tries to find the license in the following locations:</p>
+        <p>1. Explicit path.</p>
+        <p>2. The folder that contains the Aspose component assembly.</p>
+        <p>3. The folder that contains the client's calling assembly.</p>
+        <p>4. The folder that contains the entry (startup) assembly.</p>
+        <p>5. An embedded resource in the client's calling assembly.</p>
+        <p>
+          <b>Note:</b>On the .NET Compact Framework, tries to find the license only in these locations:</p>
+        <p>1. Explicit path.</p>
+        <p>2. An embedded resource in the client's calling assembly.</p>
+      </remarks>
+      <param name="licenseName">Can be a full or short file name or name of an embedded resource.
+            Use an empty string to switch to evaluation mode.</param>
+    </member>
+    <member name="M:Aspose.Pub.License.SetLicense(System.IO.Stream)">
+      <summary>
+            Licenses the component.
+            </summary>
+      <param name="stream">A stream that contains the license.</param>
+      <remarks>
+        <p>Use this method to load a license from a stream.</p>
+      </remarks>
+    </member>
+    <member name="T:Aspose.Pub.TextGroup">
+      <summary>
+            Text group
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextGroup.#ctor(System.String,Aspose.Pub.TextStyle)">
+      <summary>
+            Constructor
+            </summary>
+      <param name="text">Text in group</param>
+      <param name="style">Style of group</param>
+    </member>
+    <member name="P:Aspose.Pub.TextGroup.Text">
+      <summary>
+            Text in group
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextGroup.UpdateText(System.String)">
+      <summary>
+            Updates text
+            </summary>
+      <param name="newText">Value for new text</param>
+    </member>
+    <member name="P:Aspose.Pub.TextGroup.Style">
+      <summary>
+            Style for text group
+            </summary>
+    </member>
+    <member name="T:Aspose.Pub.TextParagraph">
+      <summary>
+            Represents PUB text paragraph
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextParagraph.#ctor(System.Collections.Generic.List{Aspose.Pub.TextGroup},Aspose.Pub.ParagraphStyle)">
+      <summary>
+            Constructor
+            </summary>
+      <param name="textParts">Text groups</param>
+      <param name="style">Paragraph's style</param>
+    </member>
+    <member name="P:Aspose.Pub.TextParagraph.TextParts">
+      <summary>
+            Text groups
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.TextParagraph.Style">
+      <summary>
+            Style of paragraph
+            </summary>
+    </member>
+    <member name="T:Aspose.Pub.BaseStyle">
+      <summary>
+            Declares base functionality for PUB styles
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.BaseStyle.IsEmpty">
+      <summary>
+            Is style not initialized
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.BaseStyle.GetNamesOfAllProcessedIdentifiers">
+      <summary>
+            Gets names of all identifiers processed
+            </summary>
+      <returns>names of identifiers</returns>
+    </member>
+    <member name="T:Aspose.Pub.TextStyle">
+      <summary>
+            Describes PUB text style
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.TextStyle.IsBold">
+      <summary>
+            Is text bold
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextStyle.SetIsBold(System.Boolean)">
+      <summary>
+            Sets is text bold
+            </summary>
+      <param name="value">Is bold value</param>
+    </member>
+    <member name="P:Aspose.Pub.TextStyle.IsItalic">
+      <summary>
+            Is text italic
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextStyle.SetIsItalic(System.Boolean)">
+      <summary>
+            Sets is text italic
+            </summary>
+      <param name="value">Is italic value</param>
+    </member>
+    <member name="P:Aspose.Pub.TextStyle.UnderlineType">
+      <summary>
+            Underline type for text
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextStyle.SetUnderlineType(Aspose.Pub.UnderlineType)">
+      <summary>
+            Sets underline type for text
+            </summary>
+      <param name="value">Value of underline type</param>
+    </member>
+    <member name="P:Aspose.Pub.TextStyle.IsOutline">
+      <summary>
+            Is text outlined
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextStyle.SetIsOutline(System.Boolean)">
+      <summary>
+            Sets is text outlined
+            </summary>
+      <param name="value">Is text outlined value</param>
+    </member>
+    <member name="P:Aspose.Pub.TextStyle.IsShadow">
+      <summary>
+            Is text shadowed
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextStyle.SetIsShadow(System.Boolean)">
+      <summary>
+            Sets is text shadowed
+            </summary>
+      <param name="value">Is text shadowed value</param>
+    </member>
+    <member name="P:Aspose.Pub.TextStyle.IsSmallCapsMode">
+      <summary>
+            Is small caps mode enabled
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextStyle.SetIsSmallCapsMode(System.Boolean)">
+      <summary>
+            Enables/disables small caps mode for text
+            </summary>
+      <param name="value">Is small caps mode enabled</param>
+    </member>
+    <member name="P:Aspose.Pub.TextStyle.IsAllCapsMode">
+      <summary>
+            Is all caps mode enabled
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextStyle.SetIsAllCapsMode(System.Boolean)">
+      <summary>
+            Enables/disables all caps mode for text
+            </summary>
+      <param name="value">Is all caps mode enabled</param>
+    </member>
+    <member name="P:Aspose.Pub.TextStyle.IsEmboss">
+      <summary>
+            Is text embossed
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextStyle.SetIsEmboss(System.Boolean)">
+      <summary>
+            Sets is text embossed
+            </summary>
+      <param name="value">Is text embossed value</param>
+    </member>
+    <member name="P:Aspose.Pub.TextStyle.IsEngrave">
+      <summary>
+            Is text engraved
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextStyle.SetIsEngrave(System.Boolean)">
+      <summary>
+            Sets is text engraved
+            </summary>
+      <param name="value">Is text engraved value</param>
+    </member>
+    <member name="P:Aspose.Pub.TextStyle.RawTextSize">
+      <summary>
+            Size of text in PUB metrics(in EMUs)
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextStyle.SetRawTextSize(System.Int32)">
+      <summary>
+            Sets size of text in PUB metrics(in EMUs)
+            </summary>
+      <param name="value">Value of text size in EMUs</param>
+    </member>
+    <member name="M:Aspose.Pub.TextStyle.CalculateTextSize">
+      <summary>
+            Calculates text size in points
+            </summary>
+      <returns>text size in points</returns>
+    </member>
+    <member name="P:Aspose.Pub.TextStyle.ColorIndex">
+      <summary>
+            Gets index of color in Document.Colors array
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextStyle.SetColorIndex(System.Int32)">
+      <summary>
+            Sets index of color in Document.Colors array
+            </summary>
+      <param name="value">Value of color index</param>
+    </member>
+    <member name="P:Aspose.Pub.TextStyle.FontIndex">
+      <summary>
+            Gets index of font name in Document.FontNames array
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextStyle.SetFontIndex(System.Int32)">
+      <summary>
+            Sets index of font name in Document.FontNames array
+            </summary>
+      <param name="value">Value of font index</param>
+    </member>
+    <member name="P:Aspose.Pub.TextStyle.SuperscriptType">
+      <summary>
+            Type of superscript
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextStyle.SetSuperscriptType(Aspose.Pub.SuperscriptType)">
+      <summary>
+            Sets type of superscript
+            </summary>
+      <param name="value">Value of superscript type</param>
+    </member>
+    <member name="P:Aspose.Pub.TextStyle.ScaleValue">
+      <summary>
+            Value of scale
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextStyle.SetScaleValue(System.Double)">
+      <summary>
+            Sets value of scale
+            </summary>
+      <param name="value">Value of scale</param>
+    </member>
+    <member name="P:Aspose.Pub.TextStyle.Locale">
+      <summary>
+            Locale identifier
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.TextStyle.SetLocale(System.Int32)">
+      <summary>
+            Sets locale identifier
+            </summary>
+      <param name="value">Locale identifier</param>
+    </member>
+    <member name="M:Aspose.Pub.TextStyle.GetNamesOfAllProcessedIdentifiers">
+      <summary>
+            Get names of processed identifiers
+            </summary>
+      <returns>names of identifiers</returns>
+    </member>
+    <member name="T:Aspose.Pub.ParagraphStyle">
+      <summary>
+            This class describes style of PUB paragraph
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.ParagraphStyle.Align">
+      <summary>
+            Alignment type
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.ParagraphStyle.SetAlignmentType(Aspose.Pub.AlignmentType)">
+      <summary>
+            Sets alignment type
+            </summary>
+      <param name="value">alignment type</param>
+    </member>
+    <member name="P:Aspose.Pub.ParagraphStyle.DefaultStyleIndex">
+      <summary>
+            Index of default text style in Document.DefaultTextStyles array
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.ParagraphStyle.SetDefaultStyleIndex(System.Int32)">
+      <summary>
+            Sets index for default text style in Document.DefaultTextStyles array
+            </summary>
+      <param name="value">default style index</param>
+    </member>
+    <member name="P:Aspose.Pub.ParagraphStyle.LineSpacingValue">
+      <summary>
+            Value of line spacing
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.ParagraphStyle.SetLineSpacingValue(System.Double)">
+      <summary>
+            Sets value of line spacing
+            </summary>
+      <param name="value">Value of line spacing</param>
+    </member>
+    <member name="P:Aspose.Pub.ParagraphStyle.LineSpacingType">
+      <summary>
+            Type of line spacing
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.ParagraphStyle.SetLineSpacingType(Aspose.Pub.LineSpacingType)">
+      <summary>
+            Sets type of line spacing
+            </summary>
+      <param name="value">Value of line spacing type</param>
+    </member>
+    <member name="P:Aspose.Pub.ParagraphStyle.TopIndent">
+      <summary>
+            Top indent value
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.ParagraphStyle.SetTopIndent(System.Int32)">
+      <summary>
+            Sets top indent
+            </summary>
+      <param name="value">Top indent value</param>
+    </member>
+    <member name="P:Aspose.Pub.ParagraphStyle.BottomIndent">
+      <summary>
+            Bottom indent
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.ParagraphStyle.SetBottomIndent(System.Int32)">
+      <summary>
+            Sets bottom indent
+            </summary>
+      <param name="value">Bottom indent value</param>
+    </member>
+    <member name="P:Aspose.Pub.ParagraphStyle.FirstLineIndent">
+      <summary>
+            First line indent
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.ParagraphStyle.SetFirstLineIndent(System.Int32)">
+      <summary>
+            Sets first line indent
+            </summary>
+      <param name="value">First line indent value</param>
+    </member>
+    <member name="P:Aspose.Pub.ParagraphStyle.LeftIndent">
+      <summary>
+            Left indent
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.ParagraphStyle.SetLeftIndent(System.Int32)">
+      <summary>
+            Sets left indent
+            </summary>
+      <param name="value">Lefdt indent value</param>
+    </member>
+    <member name="P:Aspose.Pub.ParagraphStyle.RightIndent">
+      <summary>
+            Right indent
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.ParagraphStyle.SetRightIndent(System.Int32)">
+      <summary>
+            Sets right indent
+            </summary>
+      <param name="value">Right indent value</param>
+    </member>
+    <member name="P:Aspose.Pub.ParagraphStyle.IsList">
+      <summary>
+            Is list paragraph
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.ParagraphStyle.SetIsList(System.Boolean)">
+      <summary>
+            Sets is paragraph list
+            </summary>
+      <param name="value">Is list value</param>
+    </member>
+    <member name="P:Aspose.Pub.ParagraphStyle.IsOrderedList">
+      <summary>
+            Is paragraph ordered list
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.ParagraphStyle.SetIsOrderedList(System.Boolean)">
+      <summary>
+            Sets whether paragraph is ordered list
+            </summary>
+      <param name="value">Is ordered list value</param>
+    </member>
+    <member name="P:Aspose.Pub.ParagraphStyle.UnorderedListChar">
+      <summary>
+            Character for unordered list in paragraph, if paragraph is an unordered list
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.ParagraphStyle.SetUnorderedListChar(System.Char)">
+      <summary>
+            Sets character for unordered list in paragraph
+            </summary>
+      <param name="value">Unordered list char value</param>
+    </member>
+    <member name="M:Aspose.Pub.ParagraphStyle.GetNamesOfAllProcessedIdentifiers">
+      <summary>
+            Gets names of all identifiers processed
+            </summary>
+      <returns>Names of identifiers</returns>
+    </member>
+    <member name="T:Aspose.Pub.SuperscriptType">
+      <summary>
+            Type of superscript
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.SuperscriptType.NoSuperSubScript">
+      <summary>
+            NoSuperSubScript
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.SuperscriptType.Superscript">
+      <summary>
+            Superscript type
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.SuperscriptType.Subscript">
+      <summary>
+            Subscript type
+            </summary>
+    </member>
+    <member name="T:Aspose.Pub.AlignmentType">
+      <summary>
+            Type of alignment
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.AlignmentType.Left">
+      <summary>
+            Left alignment
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.AlignmentType.Right">
+      <summary>
+            Right alignment
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.AlignmentType.Center">
+      <summary>
+            Center alignment
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.AlignmentType.Justify">
+      <summary>
+            Justify alignment
+            </summary>
+    </member>
+    <member name="T:Aspose.Pub.LineSpacingType">
+      <summary>
+            Type of line spacing
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.LineSpacingType.Points">
+      <summary>
+            Line spacing directly in points
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.LineSpacingType.Lines">
+      <summary>
+            Koefficient of count of lines
+            </summary>
+    </member>
+    <member name="T:Aspose.Pub.UnderlineType">
+      <summary>
+            Underline type
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.Unknown">
+      <summary>
+            Unknown underline type
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.Single">
+      <summary>
+            Single line
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.WordsOnly">
+      <summary>
+            Words only
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.Double">
+      <summary>
+            Double underline type
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.Dotted">
+      <summary>
+            Dotted underline type
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.Thick">
+      <summary>
+            Thick underline type
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.Dash">
+      <summary>
+            Dash underline type
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.DotDash">
+      <summary>
+            DotDash underline type
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.DotDotDash">
+      <summary>
+            DotDotDash underline type
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.Wave">
+      <summary>
+            Wave underline type
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.ThickWave">
+      <summary>
+            ThickWave underline type
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.ThickDot">
+      <summary>
+            ThickDot underline type
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.ThickDash">
+      <summary>
+            ThickDash underline type
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.ThickDotDash">
+      <summary>
+            ThickDotDash underline type
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.ThickDotDotDash">
+      <summary>
+            ThickDotDotDash underline type
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.LongDash">
+      <summary>
+            LongDash underline type
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.ThickLongDash">
+      <summary>
+            ThickLongDash underline type
+            </summary>
+    </member>
+    <member name="F:Aspose.Pub.UnderlineType.DoubleWave">
+      <summary>
+            DoubleWave underline type
+            </summary>
+    </member>
+    <member name="T:Aspose.Pub.Utils.NamespaceDoc">
+      <summary>
+            Namespace Aspose.PUB.Utils provides an utility objects
+            </summary>
+    </member>
+    <member name="T:Aspose.Pub.Utils.Coord">
+      <summary>
+            This class designed to represent data related to coordinates of PUB fields.
+            Every field in PUB holds coordinates has 2 pairs of coordinates: coordinates of upper-left corner
+            (XLeft, YTop) and coordinates of bottom-right corner(XRight, YBottom). 
+            All coordinates represented in special metric system - English Metric Unit(EMUs). Additional methods
+            were added into this class to transform coordinate values from english metric units into inches.
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.Utils.Coord.#ctor">
+      <summary>
+            Constructor
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.Utils.Coord.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>
+            Constructor
+            </summary>
+      <param name="xLeft">X-coordinate of upper-left corner in EMUs</param>
+      <param name="yTop">Y-coordinate of upper-left corner in EMUs</param>
+      <param name="xRight">X-coordinate of bottom-right corner in EMUs</param>
+      <param name="yBottom">Y-coordinate of bottom-right corner in EMUs</param>
+    </member>
+    <member name="P:Aspose.Pub.Utils.Coord.XLeft">
+      <summary>
+            X-coordinate of upper-left corner in EMUs
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.Utils.Coord.YTop">
+      <summary>
+            Y-coordinate of upper-left corner in EMUs
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.Utils.Coord.XRight">
+      <summary>
+            X-coordinate of bottom-right corner in EMUs
+            </summary>
+    </member>
+    <member name="P:Aspose.Pub.Utils.Coord.YBottom">
+      <summary>
+            Y-coordinate of bottom-right corner in EMUs
+            </summary>
+    </member>
+    <member name="M:Aspose.Pub.Utils.Coord.CalculateX(System.Double)">
+      <summary>
+            Transforms value for X-coordinate from natural PUB metric system into inches
+            </summary>
+      <param name="pageWidth">with of page where current coordinate placed</param>
+      <returns>X-coordinate in inches</returns>
+    </member>
+    <member name="M:Aspose.Pub.Utils.Coord.CalculateX">
+      <summary>
+            Transforms value for X-coordinate from natural PUB metric system into inches
+            </summary>
+      <returns>X-coordinate in inches</returns>
+    </member>
+    <member name="M:Aspose.Pub.Utils.Coord.CalculateY(System.Double)">
+      <summary>
+            Transforms value for Y-coordinate from natural PUB metric system into inches
+            </summary>
+      <param name="pageHeight">height of page where current coordinate placed</param>
+      <returns>Y-coordinate in inches</returns>
+    </member>
+    <member name="M:Aspose.Pub.Utils.Coord.CalculateY">
+      <summary>
+            Transforms value for Y-coordinate from natural PUB metric system into inches
+            </summary>
+      <returns>Y-coordinate in inches</returns>
+    </member>
+    <member name="M:Aspose.Pub.Utils.Coord.CalculateWidth">
+      <summary>
+            Calculates width of figure(current Coord object) and returns result in inches
+            </summary>
+      <returns>width of current Coord object(figure) in inches</returns>
+    </member>
+    <member name="M:Aspose.Pub.Utils.Coord.CalculateHeight">
+      <summary>
+            Calculates height of figure(current Coord object) and returns result in inches
+            </summary>
+      <returns>height of current Coord object(figure) in inches</returns>
+    </member>
+    <member name="M:Aspose.Pub.Utils.Coord.GetWidth">
+      <summary>
+            Returns width of current Coord object in natural PUB metrics
+            </summary>
+      <returns>width in natural PUB metrics</returns>
+    </member>
+    <member name="M:Aspose.Pub.Utils.Coord.GetHeight">
+      <summary>
+            Returns height of current Coord object in natural PUB metrics
+            </summary>
+      <returns>height in natural PUB metrics</returns>
+    </member>
+    <member name="M:Aspose.Pub.Utils.Coord.Clone">
+      <summary>
+            Created copy of object
+            </summary>
+      <returns>copy of object</returns>
+    </member>
+  </members>
+</doc>

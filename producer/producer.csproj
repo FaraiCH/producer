@@ -9,8 +9,38 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="Aspose.CAD">
+      <HintPath>C:\Users\User\Videos\Aspose.Total_dll_only_Downloadly.ir\net4.0\Aspose.CAD.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Cells">
+      <HintPath>C:\Users\User\Videos\Aspose.Total_dll_only_Downloadly.ir\net4.0\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Diagram">
+      <HintPath>C:\Users\User\Videos\Aspose.Total_dll_only_Downloadly.ir\net4.0\Aspose.Diagram.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Note">
+      <HintPath>C:\Users\User\Videos\Aspose.Total_dll_only_Downloadly.ir\net4.0\Aspose.Note.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.OCR">
+      <HintPath>C:\Users\User\Videos\Aspose.Total_dll_only_Downloadly.ir\net4.0\Aspose.OCR.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Page">
+      <HintPath>C:\Users\User\Videos\Aspose.Total_dll_only_Downloadly.ir\net4.0\Aspose.Page.dll</HintPath>
+    </Reference>
     <Reference Include="Aspose.PDF">
-      <HintPath>..\..\..\Users\Farai Chakarisa BT\Videos\Aspose.Total_dll_only_Downloadly.ir\net2.0\Aspose.PDF.dll</HintPath>
+      <HintPath>C:\Users\User\Videos\Aspose.Total_dll_only_Downloadly.ir\net4.0\Aspose.PDF.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.PSD">
+      <HintPath>C:\Users\User\Videos\Aspose.Total_dll_only_Downloadly.ir\net4.0\Aspose.PSD.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.PUB">
+      <HintPath>C:\Users\User\Videos\Aspose.Total_dll_only_Downloadly.ir\net4.0\Aspose.PUB.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Slides">
+      <HintPath>C:\Users\User\Videos\Aspose.Total_dll_only_Downloadly.ir\net4.0\Aspose.Slides.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words">
+      <HintPath>C:\Users\User\Videos\Aspose.Total_dll_only_Downloadly.ir\net4.0\Aspose.Words.dll</HintPath>
     </Reference>
   </ItemGroup>
 
