@@ -1,17 +1,23 @@
 ﻿using Aspose.Pdf;
 using Aspose.Pdf.Text;
+using Aspose.Slides;
+using Aspose.Words;
+using Aspose.Words.Drawing;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using producer.Models;
+using SkiaSharp;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Document = Aspose.Words.Document;
 
 namespace producer.Controllers
 {
@@ -64,7 +70,7 @@ namespace producer.Controllers
             try
             {
 
-                Document pdfDocument = new Document("/var/www/html/imspulse/bunch-box" + fullName);
+                Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document("/var/www/html/imspulse/bunch-box" + fullName);
                 DocSaveOptions saveOptions = new DocSaveOptions
                 {
                     Format = DocSaveOptions.DocFormat.Doc,
@@ -98,7 +104,7 @@ namespace producer.Controllers
             try
             {
 
-                Document pdfDocument = new Document();
+                Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document();
                 // Add page
                 Page page = pdfDocument.Pages.Add();
                 pdfDocument.Save(basepath + fullName);
@@ -111,6 +117,61 @@ namespace producer.Controllers
                 return new JsonResult(ex.ToString());
             }
 
+        }
+
+        public IActionResult PowerCreate(string fullName)
+        {
+            Exec("sudo chmod 775 -R /var/www/html/imspulse/bunch-box");
+            string LData = "PExpY2Vuc2U+CjxEYXRhPgo8TGljZW5zZWRUbz5BdmVQb2ludDwvTGljZW5zZWRUbz4KPEVtYWlsVG8+aXRfYmlsbGluZ0BhdmVwb2ludC5jb208L0VtYWlsVG8+CjxMaWNlbnNlVHlwZT5EZXZlbG9wZXIgT0VNPC9MaWNlbnNlVHlwZT4KPExpY2Vuc2VOb3RlPkxpbWl0ZWQgdG8gMSBkZXZlbG9wZXIsIHVubGltaXRlZCBwaHlzaWNhbCBsb2NhdGlvbnM8L0xpY2Vuc2VOb3RlPgo8T3JkZXJJRD4xOTA1MjAwNzE1NDY8L09yZGVySUQ+CjxVc2VySUQ+MTU0ODI2PC9Vc2VySUQ+CjxPRU0+VGhpcyBpcyBhIHJlZGlzdHJpYnV0YWJsZSBsaWNlbnNlPC9PRU0+CjxQcm9kdWN0cz4KPFByb2R1Y3Q+QXNwb3NlLlRvdGFsIGZvciAuTkVUPC9Qcm9kdWN0Pgo8L1Byb2R1Y3RzPgo8RWRpdGlvblR5cGU+RW50ZXJwcmlzZTwvRWRpdGlvblR5cGU+CjxTZXJpYWxOdW1iZXI+Y2JmMzVkNWYtOWE2Ni00ZTI4LTg1ZGQtM2ExN2JiZTM0MTNhPC9TZXJpYWxOdW1iZXI+CjxTdWJzY3JpcHRpb25FeHBpcnk+MjAyMDA2MDQ8L1N1YnNjcmlwdGlvbkV4cGlyeT4KPExpY2Vuc2VWZXJzaW9uPjMuMDwvTGljZW5zZVZlcnNpb24+CjxMaWNlbnNlSW5zdHJ1Y3Rpb25zPmh0dHBzOi8vcHVyY2hhc2UuYXNwb3NlLmNvbS9wb2xpY2llcy91c2UtbGljZW5zZTwvTGljZW5zZUluc3RydWN0aW9ucz4KPC9EYXRhPgo8U2lnbmF0dXJlPnpqZDMrdWgzNTdiZHhqR3JWTTZCN3I2c250TkRBTlRXU2MyQi9RWS9hdmZxTnA0VHk5Z0kxR2V1NUdOaWVwRHArY1JrRFBMdjBDRTZ2MHNjYVZwK1JNTkF5SzdiUzdzeGZSL205Z0NtekFNUlptdUxQTm1laEtZVTNvOGJWVDJvWmRJeEY2dVRTMDhIclJxUnk5SWt6c3BxYmRrcEZFY0lGcHlLbDF2NlF2UT08L1NpZ25hdHVyZT4KPC9MaWNlbnNlPg==";
+            string basepath = "/var/www/html/imspulse/bunch-box";
+            Stream stream4 = new MemoryStream(Convert.FromBase64String(LData));
+            Stream stream1 = new MemoryStream(Convert.FromBase64String(LData));
+            Stream stream2 = new MemoryStream(Convert.FromBase64String(LData));
+
+            new Aspose.Pdf.License().SetLicense(stream4);
+            new Aspose.Words.License().SetLicense(stream1);
+            new Aspose.Slides.License().SetLicense(stream2);
+            try
+            {
+                using var presentation = new Presentation(basepath + fullName);
+                var doc = new Document();
+                var builder = new DocumentBuilder(doc);
+                foreach (var slide in presentation.Slides)
+                {
+                    // generates and inserts slide image
+                    using var bitmap = slide.GetThumbnail(1, 1);
+                    using var stream = new MemoryStream();
+                    bitmap.Save(stream, ImageFormat.Png);
+                    stream.Seek(0, SeekOrigin.Begin);
+                    using (SKBitmap skBitmap = SKBitmap.Decode(stream))
+                    {
+                        using (SKImage image = SKImage.FromBitmap(skBitmap))
+                        {
+                            using (SKData data = image.Encode())
+                            {
+                                byte[] imageByteArray = data.ToArray();
+
+                                builder.InsertImage(imageByteArray);
+                            }
+                        }
+                    }
+                    // inserts slide's texts
+                    foreach (var shape in slide.Shapes)
+                    {
+                        if (shape is AutoShape autoShape)
+                        {
+                            builder.Writeln(autoShape.TextFrame.Text);
+                        }
+                    }
+                    builder.InsertBreak(BreakType.PageBreak);
+                }
+                doc.Save("/var/www/html/imspulse/bunch-box/Power.docx");
+                return new JsonResult("Document Created Successfully");
+            }
+            catch (Exception ex)
+            {
+                return new JsonResult(ex.ToString());
+            }
         }
 
         private static Stream GetContentFromUrlAsStream(string url, ICredentials credentials = null)

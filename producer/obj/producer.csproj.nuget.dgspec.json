@@ -49,6 +49,10 @@
             "SkiaSharp": {
               "target": "Package",
               "version": "[2.88.3, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

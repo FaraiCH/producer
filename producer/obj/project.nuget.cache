@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "+F0cTVxRTZbQYz0RmD+emb3kyxuaeaVXSKpzfdWekU97qZebI5hFqcaBqdi9dj9kkvWIlKQM6ozib0UcML2c0g==",
+  "dgSpecHash": "A6TklxhnmCRj8mW0KYCZ0j6hTQR/tptvvXvcRI7jNXfL12AivyVHaA8x4m33kYEmo3vZ6j50cc09zQCBqXy87Q==",
   "success": true,
   "projectFilePath": "D:\\Testing\\producer\\producer\\producer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\skiasharp\\2.88.3\\skiasharp.2.88.3.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.3\\skiasharp.nativeassets.macos.2.88.3.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.3\\skiasharp.nativeassets.win32.2.88.3.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.3\\skiasharp.nativeassets.win32.2.88.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

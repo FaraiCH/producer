@@ -42,6 +42,7 @@ D:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\producer.deps.json
 D:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\producer.runtimeconfig.json
 D:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\producer.pdb
 D:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\SkiaSharp.dll
+D:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\System.Drawing.Common.dll
 D:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\runtimes\osx\native\libSkiaSharp.dylib
 D:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\runtimes\win-arm64\native\libSkiaSharp.dll
 D:\Testing\producer\producer\obj\Release\net5.0\PubTmp\Out\runtimes\win-x64\native\libSkiaSharp.dll

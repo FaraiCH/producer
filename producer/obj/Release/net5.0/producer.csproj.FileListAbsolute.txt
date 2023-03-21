@@ -115,3 +115,4 @@ D:\Testing\producer\producer\bin\Release\net5.0\Aspose.PSD.xml
 D:\Testing\producer\producer\bin\Release\net5.0\Aspose.PUB.xml
 D:\Testing\producer\producer\bin\Release\net5.0\Aspose.Slides.xml
 D:\Testing\producer\producer\bin\Release\net5.0\Aspose.Words.xml
+D:\Testing\producer\producer\bin\Release\net5.0\System.Drawing.Common.dll
