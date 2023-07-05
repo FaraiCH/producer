@@ -18,6 +18,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Web;
 using Document = Aspose.Words.Document;
 
 namespace producer.Controllers
@@ -67,6 +68,12 @@ namespace producer.Controllers
             Stream stream4 = new MemoryStream(Convert.FromBase64String(LData));
             new Aspose.Cells.License().SetLicense(stream4);
 
+            // URL decode the JSON data
+            string decodedJsonData = HttpUtility.UrlDecode(jsonData);
+
+            // Parse the JSON data
+            dynamic parsedJsonData = Newtonsoft.Json.JsonConvert.DeserializeObject(decodedJsonData);
+
             // Create a new workbook
             Workbook workbook = new Workbook();
 
@@ -74,7 +81,7 @@ namespace producer.Controllers
             Worksheet worksheet = workbook.Worksheets[0];
 
             // Convert the JSON data to a two-dimensional object array
-            string[,] data = GetObjectArrayFromJson(jsonData);
+            string[,] data = GetObjectArrayFromJson(parsedJsonData);
 
             // Populate the worksheet with the data
             int rowCount = data.GetLength(0);
