@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\xampp\htdocs\producer\producer\bin\Release\net5.0\publish\</_PublishTargetUrl>
-    <History>True|2023-07-05T09:28:42.6280689Z;True|2023-07-05T08:56:24.3373619+02:00;</History>
+    <History>True|2023-07-05T09:31:46.8586601Z;True|2023-07-05T11:28:42.6280689+02:00;True|2023-07-05T08:56:24.3373619+02:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>
