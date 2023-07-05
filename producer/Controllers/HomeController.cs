@@ -1,4 +1,5 @@
-﻿using Aspose.Pdf;
+﻿using Aspose.Cells;
+using Aspose.Pdf;
 using Aspose.Pdf.Text;
 using Aspose.Slides;
 using Aspose.Words;
@@ -58,6 +59,68 @@ namespace producer.Controllers
      
             return View();
         }
+
+        public IActionResult JsonToExcel([FromBody] dynamic jsonData)
+        {
+            string LData = "PExpY2Vuc2U+CjxEYXRhPgo8TGljZW5zZWRUbz5BdmVQb2ludDwvTGljZW5zZWRUbz4KPEVtYWlsVG8+aXRfYmlsbGluZ0BhdmVwb2ludC5jb208L0VtYWlsVG8+CjxMaWNlbnNlVHlwZT5EZXZlbG9wZXIgT0VNPC9MaWNlbnNlVHlwZT4KPExpY2Vuc2VOb3RlPkxpbWl0ZWQgdG8gMSBkZXZlbG9wZXIsIHVubGltaXRlZCBwaHlzaWNhbCBsb2NhdGlvbnM8L0xpY2Vuc2VOb3RlPgo8T3JkZXJJRD4xOTA1MjAwNzE1NDY8L09yZGVySUQ+CjxVc2VySUQ+MTU0ODI2PC9Vc2VySUQ+CjxPRU0+VGhpcyBpcyBhIHJlZGlzdHJpYnV0YWJsZSBsaWNlbnNlPC9PRU0+CjxQcm9kdWN0cz4KPFByb2R1Y3Q+QXNwb3NlLlRvdGFsIGZvciAuTkVUPC9Qcm9kdWN0Pgo8L1Byb2R1Y3RzPgo8RWRpdGlvblR5cGU+RW50ZXJwcmlzZTwvRWRpdGlvblR5cGU+CjxTZXJpYWxOdW1iZXI+Y2JmMzVkNWYtOWE2Ni00ZTI4LTg1ZGQtM2ExN2JiZTM0MTNhPC9TZXJpYWxOdW1iZXI+CjxTdWJzY3JpcHRpb25FeHBpcnk+MjAyMDA2MDQ8L1N1YnNjcmlwdGlvbkV4cGlyeT4KPExpY2Vuc2VWZXJzaW9uPjMuMDwvTGljZW5zZVZlcnNpb24+CjxMaWNlbnNlSW5zdHJ1Y3Rpb25zPmh0dHBzOi8vcHVyY2hhc2UuYXNwb3NlLmNvbS9wb2xpY2llcy91c2UtbGljZW5zZTwvTGljZW5zZUluc3RydWN0aW9ucz4KPC9EYXRhPgo8U2lnbmF0dXJlPnpqZDMrdWgzNTdiZHhqR3JWTTZCN3I2c250TkRBTlRXU2MyQi9RWS9hdmZxTnA0VHk5Z0kxR2V1NUdOaWVwRHArY1JrRFBMdjBDRTZ2MHNjYVZwK1JNTkF5SzdiUzdzeGZSL205Z0NtekFNUlptdUxQTm1laEtZVTNvOGJWVDJvWmRJeEY2dVRTMDhIclJxUnk5SWt6c3BxYmRrcEZFY0lGcHlLbDF2NlF2UT08L1NpZ25hdHVyZT4KPC9MaWNlbnNlPg==";
+
+            Stream stream4 = new MemoryStream(Convert.FromBase64String(LData));
+            new Aspose.Cells.License().SetLicense(stream4);
+
+            // Create a new workbook
+            Workbook workbook = new Workbook();
+
+            // Access the first worksheet
+            Worksheet worksheet = workbook.Worksheets[0];
+
+            // Convert the JSON data to a two-dimensional object array
+            string[,] data = GetObjectArrayFromJson(jsonData);
+
+            // Populate the worksheet with the data
+            int rowCount = data.GetLength(0);
+            int columnCount = data.GetLength(1);
+            worksheet.Cells.ImportArray(data, rowCount, columnCount);
+
+            // Save the workbook to a memory stream
+            System.IO.MemoryStream stream = new System.IO.MemoryStream();
+            workbook.Save(stream, Aspose.Cells.SaveFormat.Xlsx);
+
+            // Set the position of the stream back to the beginning
+            stream.Position = 0;
+
+            // Create a response with the Excel file
+            var fileContentResult = new FileContentResult(stream.ToArray(), "application/octet-stream")
+            {
+                FileDownloadName = "converted_file.xlsx"
+            };
+
+            return fileContentResult;
+  
+        }
+
+        private string[,] GetObjectArrayFromJson(dynamic jsonData)
+        {
+            // Assuming your JSON has an array of objects with consistent structure
+            // Modify this method as per your JSON structure
+            var jsonArray = jsonData as Newtonsoft.Json.Linq.JArray;
+
+            int rowCount = jsonArray.Count;
+            int columnCount = jsonArray[0].Count();
+
+            string[,] data = new string[rowCount, columnCount];
+
+            for (int i = 0; i < rowCount; i++)
+            {
+                var item = jsonArray[i];
+                for (int j = 0; j < columnCount; j++)
+                {
+                    data[i, j] = item[j].ToString();
+                }
+            }
+
+            return data;
+        }
+
         [HttpGet]
         public IActionResult PDFConvert(string fullName)
         {

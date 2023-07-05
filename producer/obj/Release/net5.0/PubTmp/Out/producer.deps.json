@@ -33,18 +33,23 @@
     ".NETCoreApp,Version=v5.0": {
       "producer/1.0.0": {
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "SkiaSharp": "2.88.3",
           "System.Drawing.Common": "7.0.0",
+          "Aspose.3D": "19.11.0.0",
+          "Aspose.BarCode": "19.12.0.0",
           "Aspose.CAD": "19.9.0.0",
           "Aspose.Cells": "20.1.0.0",
-          "Aspose.Diagram": "20.1.0.0",
+          "Aspose.Email.Core": "19.5.0.0",
+          "Aspose.GIS": "19.12.0.0",
+          "Aspose.HTML": "20.1.0.0",
+          "Aspose.Imaging": "19.12.0.0",
           "Aspose.Note": "20.1.0.0",
-          "Aspose.OCR": "17.6.0.0",
           "Aspose.Page": "19.12.0.0",
           "Aspose.PDF": "20.1.0.0",
-          "Aspose.PSD": "19.12.0.0",
-          "Aspose.PUB": "19.12.0.0",
           "Aspose.Slides": "20.1.0.0",
+          "Aspose.SVG": "20.1.0.0",
+          "Aspose.Tasks": "20.1.0.0",
           "Aspose.Words": "20.1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
@@ -337,6 +342,17 @@
           "producer.dll": {}
         }
       },
+      "Newtonsoft.Json/13.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.3.27908"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "SkiaSharp/2.88.3": {
         "dependencies": {
           "SkiaSharp.NativeAssets.Win32": "2.88.3",
@@ -391,6 +407,28 @@
           "lib/netstandard2.0/System.Drawing.Common.dll": {}
         }
       },
+      "Aspose.3D/19.11.0.0": {
+        "runtime": {
+          "Aspose.3D.dll": {
+            "assemblyVersion": "19.11.0.0",
+            "fileVersion": "19.11.0.0"
+          }
+        },
+        "compile": {
+          "Aspose.3D.dll": {}
+        }
+      },
+      "Aspose.BarCode/19.12.0.0": {
+        "runtime": {
+          "Aspose.BarCode.dll": {
+            "assemblyVersion": "19.12.0.0",
+            "fileVersion": "19.12.0.0"
+          }
+        },
+        "compile": {
+          "Aspose.BarCode.dll": {}
+        }
+      },
       "Aspose.CAD/19.9.0.0": {
         "runtime": {
           "Aspose.CAD.dll": {
@@ -413,15 +451,48 @@
           "Aspose.Cells.dll": {}
         }
       },
-      "Aspose.Diagram/20.1.0.0": {
+      "Aspose.Email.Core/19.5.0.0": {
         "runtime": {
-          "Aspose.Diagram.dll": {
+          "Aspose.Email.Core.dll": {
+            "assemblyVersion": "19.5.0.0",
+            "fileVersion": "19.5.0.0"
+          }
+        },
+        "compile": {
+          "Aspose.Email.Core.dll": {}
+        }
+      },
+      "Aspose.GIS/19.12.0.0": {
+        "runtime": {
+          "Aspose.GIS.dll": {
+            "assemblyVersion": "19.12.0.0",
+            "fileVersion": "19.12.0.0"
+          }
+        },
+        "compile": {
+          "Aspose.GIS.dll": {}
+        }
+      },
+      "Aspose.HTML/20.1.0.0": {
+        "runtime": {
+          "Aspose.HTML.dll": {
             "assemblyVersion": "20.1.0.0",
             "fileVersion": "20.1.0.0"
           }
         },
         "compile": {
-          "Aspose.Diagram.dll": {}
+          "Aspose.HTML.dll": {}
+        }
+      },
+      "Aspose.Imaging/19.12.0.0": {
+        "runtime": {
+          "Aspose.Imaging.dll": {
+            "assemblyVersion": "19.12.0.0",
+            "fileVersion": "19.12.0.0"
+          }
+        },
+        "compile": {
+          "Aspose.Imaging.dll": {}
         }
       },
       "Aspose.Note/20.1.0.0": {
@@ -433,17 +504,6 @@
         },
         "compile": {
           "Aspose.Note.dll": {}
-        }
-      },
-      "Aspose.OCR/17.6.0.0": {
-        "runtime": {
-          "Aspose.OCR.dll": {
-            "assemblyVersion": "17.6.0.0",
-            "fileVersion": "17.6.0.0"
-          }
-        },
-        "compile": {
-          "Aspose.OCR.dll": {}
         }
       },
       "Aspose.Page/19.12.0.0": {
@@ -468,28 +528,6 @@
           "Aspose.PDF.dll": {}
         }
       },
-      "Aspose.PSD/19.12.0.0": {
-        "runtime": {
-          "Aspose.PSD.dll": {
-            "assemblyVersion": "19.12.0.0",
-            "fileVersion": "19.12.0.0"
-          }
-        },
-        "compile": {
-          "Aspose.PSD.dll": {}
-        }
-      },
-      "Aspose.PUB/19.12.0.0": {
-        "runtime": {
-          "Aspose.PUB.dll": {
-            "assemblyVersion": "19.12.0.0",
-            "fileVersion": "19.12.0.0"
-          }
-        },
-        "compile": {
-          "Aspose.PUB.dll": {}
-        }
-      },
       "Aspose.Slides/20.1.0.0": {
         "runtime": {
           "Aspose.Slides.dll": {
@@ -499,6 +537,28 @@
         },
         "compile": {
           "Aspose.Slides.dll": {}
+        }
+      },
+      "Aspose.SVG/20.1.0.0": {
+        "runtime": {
+          "Aspose.SVG.dll": {
+            "assemblyVersion": "20.1.0.0",
+            "fileVersion": "20.1.0.0"
+          }
+        },
+        "compile": {
+          "Aspose.SVG.dll": {}
+        }
+      },
+      "Aspose.Tasks/20.1.0.0": {
+        "runtime": {
+          "Aspose.Tasks.dll": {
+            "assemblyVersion": "20.1.0.0",
+            "fileVersion": "20.1.0.0"
+          }
+        },
+        "compile": {
+          "Aspose.Tasks.dll": {}
         }
       },
       "Aspose.Words/20.1.0.0": {
@@ -2218,6 +2278,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Newtonsoft.Json/13.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "path": "newtonsoft.json/13.0.3",
+      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    },
     "SkiaSharp/2.88.3": {
       "type": "package",
       "serviceable": true,
@@ -2246,6 +2313,16 @@
       "path": "system.drawing.common/7.0.0",
       "hashPath": "system.drawing.common.7.0.0.nupkg.sha512"
     },
+    "Aspose.3D/19.11.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aspose.BarCode/19.12.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Aspose.CAD/19.9.0.0": {
       "type": "reference",
       "serviceable": false,
@@ -2256,17 +2333,27 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Aspose.Diagram/20.1.0.0": {
+    "Aspose.Email.Core/19.5.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aspose.GIS/19.12.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aspose.HTML/20.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aspose.Imaging/19.12.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
     "Aspose.Note/20.1.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Aspose.OCR/17.6.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -2281,17 +2368,17 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Aspose.PSD/19.12.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Aspose.PUB/19.12.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Aspose.Slides/20.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aspose.SVG/20.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aspose.Tasks/20.1.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
