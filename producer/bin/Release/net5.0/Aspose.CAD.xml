@@ -115,14 +115,10 @@
             The compress Data
             </summary>
     </member>
-    <member name="M:Aspose.CAD.FileFormats.Cad.Dwg.LZ77StreamWriter.FoundLiteral(System.Int32,System.Int32)">
+    <member name="M:Aspose.CAD.FileFormats.Cad.Dwg.LZ77StreamWriter.CompressBytes">
       <summary>
-            Search for duplicate literals
+            Compress bytes
             </summary>
-      <param name="currentPosition">
-      </param>
-      <param name="offset">
-      </param>
     </member>
     <member name="P:Aspose.CAD.FileFormats.Cad.Dwg.LZ77StreamWriter.CompressData">
       <summary>
@@ -138,6 +134,11 @@
     <member name="P:Aspose.CAD.FileFormats.Cad.Dwg.LZ77StreamWriter.LiteralCountPosition">
       <summary>
             Current literal count position
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Cad.Dwg.LZ77StreamWriter.DictionaryBytes">
+      <summary>
+            The realization Dictionary Bytes 
             </summary>
     </member>
     <member name="T:Aspose.CAD.FileFormats.CFF2.CFF2Image">
@@ -781,6 +782,23 @@
             </summary>
       <value>Max point of object.</value>
     </member>
+    <member name="T:Aspose.CAD.FileFormats.Dgn.DgnElements.DgnDrawingElementBaseQuaternion">
+      <summary>
+            DgnDrawingElementBase class
+            </summary>
+    </member>
+    <member name="M:Aspose.CAD.FileFormats.Dgn.DgnElements.DgnDrawingElementBaseQuaternion.InitQuaternion(System.Byte[],System.Int32)">
+      <summary>
+            Initializes the quaternion.
+            </summary>
+      <param name="data">The data bytes.</param>
+      <param name="offset">The offset.</param>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dgn.DgnElements.DgnDrawingElementBaseQuaternion.QuaternionRotations">
+      <summary>
+            Gets or sets 
+            </summary>
+    </member>
     <member name="T:Aspose.CAD.FileFormats.Dgn.DgnElements.DgnArcBasedElement">
       <summary>
             Represents base class for arc-based elements
@@ -790,13 +808,6 @@
       <summary>
             Initializes a new instance of the <see cref="T:Aspose.CAD.FileFormats.Dgn.DgnElements.DgnArcBasedElement" /> class.
             </summary>
-    </member>
-    <member name="M:Aspose.CAD.FileFormats.Dgn.DgnElements.DgnArcBasedElement.InitQuaternion(System.Byte[],System.Int32)">
-      <summary>
-            Initializes the quaternion.
-            </summary>
-      <param name="data">The data bytes.</param>
-      <param name="offset">The offset.</param>
     </member>
     <member name="P:Aspose.CAD.FileFormats.Dgn.DgnElements.DgnArcBasedElement.Origin">
       <summary>
@@ -816,11 +827,6 @@
     <member name="P:Aspose.CAD.FileFormats.Dgn.DgnElements.DgnArcBasedElement.Rotation">
       <summary>
             Gets or sets Counterclockwise rotation in degrees
-            </summary>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dgn.DgnElements.DgnArcBasedElement.QuaternionRotations">
-      <summary>
-            Gets or sets 
             </summary>
     </member>
     <member name="P:Aspose.CAD.FileFormats.Dgn.DgnElements.DgnArcBasedElement.StartAngle">
@@ -1239,11 +1245,6 @@
             Gets second circle 
             </summary>
     </member>
-    <member name="P:Aspose.CAD.FileFormats.Dgn.DgnElements.DgnConeElement.QuaternionRotations">
-      <summary>
-            Gets orientation quaternion 
-            </summary>
-    </member>
     <member name="P:Aspose.CAD.FileFormats.Dgn.DgnElements.DgnConeElement.MinPoint">
       <summary>
             Gets the min point of object.
@@ -1371,11 +1372,6 @@
     <member name="P:Aspose.CAD.FileFormats.Dgn.DgnElements.DgnTextElement.Rotation">
       <summary>
             Gets or sets counterclockwise rotation in degrees
-            </summary>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dgn.DgnElements.DgnTextElement.QuaternionRotations">
-      <summary>
-            Gets or sets counterclockwise quaternion rotations in degrees
             </summary>
     </member>
     <member name="P:Aspose.CAD.FileFormats.Dgn.DgnElements.DgnTextElement.Origin">
@@ -2741,6 +2737,19 @@
             List of draw objects
             </summary>
     </member>
+    <member name="M:Aspose.CAD.FileFormats.Dwf.DwfPage.#ctor(System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.CAD.FileFormats.Dwf.DwfPage" /> class.
+            </summary>
+      <param name="pageId">
+            The page id.
+            </param>
+    </member>
+    <member name="M:Aspose.CAD.FileFormats.Dwf.DwfPage.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.CAD.FileFormats.Dwf.DwfPage" /> class.
+            </summary>
+    </member>
     <member name="M:Aspose.CAD.FileFormats.Dwf.DwfPage.SetUnit(System.String)">
       <summary>
             Sets unit of page
@@ -2767,19 +2776,93 @@
             Gets or sets object ID
             </summary>
     </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.DwfPage.Color">
+    <member name="P:Aspose.CAD.FileFormats.Dwf.DwfPage.MaxPoint">
       <summary>
-            Gets or sets background color
+            Gets the max point.
             </summary>
     </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.DwfPage.PlotOrder">
+    <member name="P:Aspose.CAD.FileFormats.Dwf.DwfPage.MinPoint">
       <summary>
-            Gets or sets plot order
+            Gets the min point.
             </summary>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.DwfPage.Entities">
+      <summary>
+            Gets read only collection of draw objects
+            </summary>
+    </member>
+    <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.DwfWhipObject">
+      <summary>
+            Represents base whip object
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.DwfWhipObject.IsMaterialized">
+      <summary>
+            Gets or sets value, that object is materialized
+            </summary>
+    </member>
+    <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable">
+      <summary>
+            Represents Whip drawable object
+            </summary>
+    </member>
+    <member name="F:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.maxPoint">
+      <summary>
+            Max point of object.
+            </summary>
+      <value>Max point of object.</value>
+    </member>
+    <member name="F:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.minPoint">
+      <summary>
+            Min point of object.
+            </summary>
+      <value>Min point of object.</value>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.Color">
+      <summary>
+            Gets or sets Color
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.LineWeight">
+      <summary>
+            Gets or sets line weight
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.IsVisible">
+      <summary>
+            Gets or sets a value indicating whether object is visible.
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.TransformMatrix">
+      <summary>
+            Gets or sets transform matrix
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.LineStyle">
+      <summary>
+            Gets or sets line style
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.LayerIndex">
+      <summary>
+            Gets or sets layer index
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.MinPoint">
+      <summary>
+            Gets the min point of object.
+            </summary>
+      <value>Min point of object.</value>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.MaxPoint">
+      <summary>
+            Gets the max point of object.
+            </summary>
+      <value>Max point of object.</value>
     </member>
     <member name="T:Aspose.CAD.FileFormats.Dwf.DwfZip">
       <summary>
-            Represents Zip decompressor for DWF
+            Represents Zip de-compressor for DWF
             </summary>
     </member>
     <member name="M:Aspose.CAD.FileFormats.Dwf.DwfZip.#ctor(System.IO.Stream)">
@@ -2793,21 +2876,12 @@
             Extracts this instance.
             </summary>
       <returns>
-      </returns>
+            The entries dictionary.
+            </returns>
     </member>
     <member name="T:Aspose.CAD.FileFormats.Dwf.EPlotInterface.NamespaceDoc">
       <summary>
             The namespace handles Dwf E-Plot processing.
-            </summary>
-    </member>
-    <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.DwfWhipObject">
-      <summary>
-            Represents base whip object
-            </summary>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.DwfWhipObject.IsMaterialized">
-      <summary>
-            Gets or sets value, that object is materialized
             </summary>
     </member>
     <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.DwfWhipAttribute">
@@ -2861,65 +2935,6 @@
       <summary>
             Gets incarnation
             </summary>
-    </member>
-    <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable">
-      <summary>
-            Represents Whip drawable object
-            </summary>
-    </member>
-    <member name="F:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.maxPoint">
-      <summary>
-            Max point of object.
-            </summary>
-      <value>Max point of object.</value>
-    </member>
-    <member name="F:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.minPoint">
-      <summary>
-            Min point of object.
-            </summary>
-      <value>Min point of object.</value>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.Color">
-      <summary>
-            Gets or sets Color
-            </summary>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.LineWeight">
-      <summary>
-            Gets or sets line weight
-            </summary>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.IsVisible">
-      <summary>
-            Gets or sets visibility
-            </summary>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.TransformMatrix">
-      <summary>
-            Gets or sets transform matrix
-            </summary>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.LineStyle">
-      <summary>
-            Gets or sets line style
-            </summary>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.LayerIndex">
-      <summary>
-            Gets or sets layer index
-            </summary>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.MinPoint">
-      <summary>
-            Gets the min point of object.
-            </summary>
-      <value>Min point of object.</value>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipDrawable.MaxPoint">
-      <summary>
-            Gets the max point of object.
-            </summary>
-      <value>Max point of object.</value>
     </member>
     <member name="T:Aspose.CAD.FileFormats.Dwf.Manifest.NamespaceDoc">
       <summary>
@@ -3059,6 +3074,46 @@
     <member name="F:Aspose.CAD.FileFormats.Dwf.Whip.DwfResult.Undefined">
       <summary>
             Undefined result
+            </summary>
+    </member>
+    <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.DwfWhipImageFormat">
+      <summary>
+            Represents image format
+            </summary>
+    </member>
+    <member name="F:Aspose.CAD.FileFormats.Dwf.Whip.DwfWhipImageFormat.BitonalMapped">
+      <summary>
+            The bitonal mapped
+            </summary>
+    </member>
+    <member name="F:Aspose.CAD.FileFormats.Dwf.Whip.DwfWhipImageFormat.Group3XMapped">
+      <summary>
+            The group3 x mapped
+            </summary>
+    </member>
+    <member name="F:Aspose.CAD.FileFormats.Dwf.Whip.DwfWhipImageFormat.Indexed">
+      <summary>
+            The indexed
+            </summary>
+    </member>
+    <member name="F:Aspose.CAD.FileFormats.Dwf.Whip.DwfWhipImageFormat.Mapped">
+      <summary>
+            The mapped
+            </summary>
+    </member>
+    <member name="F:Aspose.CAD.FileFormats.Dwf.Whip.DwfWhipImageFormat.RGB">
+      <summary>
+            The RGB
+            </summary>
+    </member>
+    <member name="F:Aspose.CAD.FileFormats.Dwf.Whip.DwfWhipImageFormat.RGBA">
+      <summary>
+            The RGB
+            </summary>
+    </member>
+    <member name="F:Aspose.CAD.FileFormats.Dwf.Whip.DwfWhipImageFormat.JPEG">
+      <summary>
+            The JPEG
             </summary>
     </member>
     <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.DwfWhipPNGGroup4ImageFormat">
@@ -3232,59 +3287,6 @@
             Represents Filled Ellipse
             </summary>
     </member>
-    <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipOutlineEllipse">
-      <summary>
-            Represents outline Ellipse (just contour)
-            </summary>
-    </member>
-    <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPNGGroup4Image">
-      <summary>
-            Represents whip PNG group for image object
-            </summary>
-    </member>
-    <member name="M:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPNGGroup4Image.#ctor(System.Int32)">
-      <summary>
-            Initializes a new instance of the <see cref="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPNGGroup4Image" /> class
-            </summary>
-      <param name="formatCode">code of format</param>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPNGGroup4Image.Columns">
-      <summary>
-            Gets image colums count
-            </summary>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPNGGroup4Image.Rows">
-      <summary>
-            Gets image rows count
-            </summary>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPNGGroup4Image.MinCorner">
-      <summary>
-            Gets minimal corner of image (top, left)
-            </summary>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPNGGroup4Image.MaxCorner">
-      <summary>
-            Gets maximal corner of image (bottom, right)
-            </summary>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPNGGroup4Image.BinaryData">
-      <summary>
-            Binary dataof image encoded accrording to format
-            </summary>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPNGGroup4Image.MaxPoint">
-      <summary>
-            Gets the max point of object.
-            </summary>
-      <value>Max point of object.</value>
-    </member>
-    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPNGGroup4Image.MinPoint">
-      <summary>
-            Gets the min point of object.
-            </summary>
-      <value>Min point of object.</value>
-    </member>
     <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPointSet">
       <summary>
             Represents point set object
@@ -3323,6 +3325,125 @@
             </summary>
       <value>Max point of object.</value>
     </member>
+    <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipGouraudPointSet">
+      <summary>
+            DwfWhipGouraudPointSet class
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipGouraudPointSet.Colors">
+      <summary>
+            Gets points
+            </summary>
+    </member>
+    <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipGouraudPolyline">
+      <summary>
+            DwfWhipGouraudPolyline class
+            </summary>
+    </member>
+    <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipGouraudPolytriangle">
+      <summary>
+            DwfWhipGouraudPolytriangle class
+            </summary>
+    </member>
+    <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipImageBase">
+      <summary>
+            Represents whip PNG group for image object
+            </summary>
+    </member>
+    <member name="M:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipImageBase.#ctor(System.Int32)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPNGGroup4Image" /> class
+            </summary>
+      <param name="formatCode">code of format</param>
+    </member>
+    <member name="M:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipImageBase.CheckFormat(System.Int32)">
+      <summary>
+            Checks the format.
+            </summary>
+      <param name="formatCode">The format code.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipImageBase.Columns">
+      <summary>
+            Gets image colums count
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipImageBase.Rows">
+      <summary>
+            Gets image rows count
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipImageBase.MinCorner">
+      <summary>
+            Gets minimal corner of image (top, left)
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipImageBase.MaxCorner">
+      <summary>
+            Gets maximal corner of image (bottom, right)
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipImageBase.BinaryData">
+      <summary>
+            Binary dataof image encoded accrording to format
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipImageBase.MaxPoint">
+      <summary>
+            Gets the max point of object.
+            </summary>
+      <value>Max point of object.</value>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipImageBase.MinPoint">
+      <summary>
+            Gets the min point of object.
+            </summary>
+      <value>Min point of object.</value>
+    </member>
+    <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipImage">
+      <summary>
+            DwfWhipImage class
+            </summary>
+    </member>
+    <member name="M:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipImage.#ctor(System.Int32)">
+      <summary>
+            Initializes a new instance of the  class.
+            </summary>
+      <param name="formatCode">code of format</param>
+    </member>
+    <member name="M:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipImage.CheckFormat(System.Int32)">
+      <summary>
+            Checks the format.
+            </summary>
+      <param name="formatCode">The format code.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipOutlineEllipse">
+      <summary>
+            Represents outline Ellipse (just contour)
+            </summary>
+    </member>
+    <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPNGGroup4Image">
+      <summary>
+            Represents whip PNG group for image object
+            </summary>
+    </member>
+    <member name="M:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPNGGroup4Image.#ctor(System.Int32)">
+      <summary>
+            Initializes a new instance of the class.
+            </summary>
+      <param name="formatCode">code of format</param>
+    </member>
+    <member name="M:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPNGGroup4Image.CheckFormat(System.Int32)">
+      <summary>
+            Checks the format.
+            </summary>
+      <param name="formatCode">The format code.</param>
+      <returns>
+      </returns>
+    </member>
     <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPolygon">
       <summary>
             Represents Polygon
@@ -3331,6 +3452,11 @@
     <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPolyline">
       <summary>
             Represents polyline
+            </summary>
+    </member>
+    <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPolymarker">
+      <summary>
+            A drawing object describing a POLYMARKER (a set of points).
             </summary>
     </member>
     <member name="T:Aspose.CAD.FileFormats.Dwf.Whip.Objects.Drawable.DwfWhipPolytriangle">
@@ -5268,136 +5394,6 @@
             </summary>
       <returns>A new exporter instance.</returns>
     </member>
-    <member name="T:Aspose.CAD.Extensions.ColorExtensions">
-      <summary>
-            The <see cref="T:Aspose.CAD.Color" /> extension methods.
-            </summary>
-    </member>
-    <member name="M:Aspose.CAD.Extensions.ColorExtensions.ToGdiColor(Aspose.CAD.Color)">
-      <summary>
-            Converts the <see cref="T:Aspose.CAD.Color" /> to the <see cref="T:System.Drawing.Color" />.
-            </summary>
-      <param name="color">The<see cref="T:Aspose.CAD.Color" /> to convert.</param>
-      <returns>The converted <see cref="T:System.Drawing.Color" />.</returns>
-    </member>
-    <member name="M:Aspose.CAD.Extensions.ColorExtensions.ToGdiColors(Aspose.CAD.Color[])">
-      <summary>
-            Converts the <see cref="T:Aspose.CAD.Color" /> array to the <see cref="T:System.Drawing.Color" /> array.
-            </summary>
-      <param name="colors">The<see cref="T:Aspose.CAD.Color" /> array to convert.</param>
-      <returns>The converted <see cref="T:System.Drawing.Color" /> array.</returns>
-    </member>
-    <member name="T:Aspose.CAD.Extensions.FontExtensions">
-      <summary>
-            Contains extension methods for the <see cref="T:Aspose.CAD.Font" /> class.
-            </summary>
-    </member>
-    <member name="M:Aspose.CAD.Extensions.FontExtensions.ToGdiFont(Aspose.CAD.Font)">
-      <summary>
-            Converts the <see cref="T:Aspose.CAD.Font" /> to the <see cref="T:System.Drawing.Font" />.
-            </summary>
-      <param name="font">The <see cref="T:Aspose.CAD.Font" /> to convert.</param>
-      <returns>The converted <see cref="T:System.Drawing.Font" />.</returns>
-    </member>
-    <member name="T:Aspose.CAD.Extensions.ImageExtensions">
-      <summary>
-            Contains extension methods for conversions based on <see cref="T:System.Drawing.Image" /> and <see cref="T:Aspose.CAD.Image" />.
-            </summary>
-    </member>
-    <member name="M:Aspose.CAD.Extensions.ImageExtensions.ToGdiImage(Aspose.CAD.Image)">
-      <summary>
-            Converts the <see cref="T:Aspose.CAD.Image" /> to the <see cref="T:System.Drawing.Image" />.
-            </summary>
-      <param name="image">The <see cref="T:Aspose.CAD.Image" /> to convert.</param>
-      <returns>The converted <see cref="T:System.Drawing.Image" />.</returns>
-      <remarks>Warning, the GDI image may get lower bounds than <paramref name="image" /> has. To get all parts of the image use more safe extension method ToGdiImageFull.</remarks>
-    </member>
-    <member name="T:Aspose.CAD.Extensions.MatrixExtensions">
-      <summary>
-            Contains the <see cref="T:Aspose.CAD.Matrix" /> class extensions.
-            </summary>
-    </member>
-    <member name="M:Aspose.CAD.Extensions.MatrixExtensions.ToGdiMatrix(Aspose.CAD.Matrix)">
-      <summary>
-            Converts the <see cref="T:Aspose.CAD.Matrix" /> to the <see cref="T:System.Drawing.Drawing2D.Matrix" />.
-            </summary>
-      <param name="matrix">The <see cref="T:Aspose.CAD.Matrix" /> to convert.</param>
-      <returns>The converted <see cref="T:System.Drawing.Drawing2D.Matrix" />.</returns>
-    </member>
-    <member name="T:Aspose.CAD.Extensions.NamespaceDoc">
-      <summary>
-            The namespace contains extension methods.
-            </summary>
-    </member>
-    <member name="T:Aspose.CAD.Extensions.PointExtensions">
-      <summary>
-            Contains extension methods for <see cref="T:Aspose.CAD.Point" /> and <see cref="T:Aspose.CAD.PointF" /> structures.
-            </summary>
-    </member>
-    <member name="M:Aspose.CAD.Extensions.PointExtensions.ToPointsArray(Aspose.CAD.Point[])">
-      <summary>
-            Converts the <see cref="T:Aspose.CAD.Point" /> array to the <see cref="T:Aspose.CAD.PointF" /> array.
-            </summary>
-      <param name="points">The <see cref="T:Aspose.CAD.Point" /> array to convert.</param>
-      <returns>The converted <see cref="T:Aspose.CAD.PointF" /> array.</returns>
-    </member>
-    <member name="M:Aspose.CAD.Extensions.PointExtensions.ToGdiPoints(Aspose.CAD.PointF[])">
-      <summary>
-            Converts the <see cref="T:Aspose.CAD.PointF" /> array to the <see cref="T:System.Drawing.PointF" /> array.
-            </summary>
-      <param name="points">The <see cref="T:Aspose.CAD.PointF" /> array to convert.</param>
-      <returns>The converted <see cref="T:System.Drawing.PointF" /> array.</returns>
-    </member>
-    <member name="M:Aspose.CAD.Extensions.PointExtensions.ToGdiPoint(Aspose.CAD.PointF)">
-      <summary>
-            Converts the <see cref="T:Aspose.CAD.PointF" /> to <see cref="T:System.Drawing.PointF" />.
-            </summary>
-      <param name="point">The <see cref="T:Aspose.CAD.PointF" /> to convert.</param>
-      <returns>The converted <see cref="T:System.Drawing.PointF" />.</returns>
-    </member>
-    <member name="T:Aspose.CAD.Extensions.RectangleExtensions">
-      <summary>
-            Contains extension methods for <see cref="T:Aspose.CAD.Rectangle" />.
-            </summary>
-    </member>
-    <member name="M:Aspose.CAD.Extensions.RectangleExtensions.ToGdiRectangle(Aspose.CAD.Rectangle)">
-      <summary>
-            Converts the <see cref="T:Aspose.CAD.Rectangle" /> to the <see cref="T:System.Drawing.Rectangle" />.
-            </summary>
-      <param name="rectangle">The rectangle to convert.</param>
-      <returns>The converted <see cref="T:System.Drawing.Rectangle" />.</returns>
-    </member>
-    <member name="M:Aspose.CAD.Extensions.RectangleExtensions.ToGdiRectangle(Aspose.CAD.RectangleF)">
-      <summary>
-            Converts the <see cref="T:Aspose.CAD.RectangleF" /> to the <see cref="T:System.Drawing.Rectangle" />.
-            </summary>
-      <param name="rectangle">The rectangle to convert.</param>
-      <returns>The converted <see cref="T:System.Drawing.RectangleF" />.</returns>
-    </member>
-    <member name="T:Aspose.CAD.Extensions.RotateFlipExtensions">
-      <summary>
-            Contains extension methods for conversion the <see cref="T:System.Drawing.RotateFlipType" /> and the <see cref="T:Aspose.CAD.RotateFlipType" /> classes.
-            </summary>
-    </member>
-    <member name="M:Aspose.CAD.Extensions.RotateFlipExtensions.ToGdiRotateFlipType(Aspose.CAD.RotateFlipType)">
-      <summary>
-            Converts Aspose.CAD.RotateFlipType to System.Drawing.RotateFlipType.
-            </summary>
-      <param name="rotateFlipType">Type of the rotate flip.</param>
-      <returns>The gdi RotateFlipType</returns>
-    </member>
-    <member name="T:Aspose.CAD.Extensions.StringFormatExtensions">
-      <summary>
-            Contains extension methods for the <see cref="T:Aspose.CAD.StringFormat" /> class.
-            </summary>
-    </member>
-    <member name="M:Aspose.CAD.Extensions.StringFormatExtensions.ToGdiStringFormat(Aspose.CAD.StringFormat)">
-      <summary>
-            Converts the <see cref="T:Aspose.CAD.StringFormat" /> to the <see cref="T:System.Drawing.StringFormat" />.
-            </summary>
-      <param name="stringFormat">The <see cref="T:Aspose.CAD.StringFormat" /> to convert.</param>
-      <returns>The converted <see cref="T:System.Drawing.StringFormat" />.</returns>
-    </member>
     <member name="T:Aspose.CAD.NonGenericList">
       <summary>
             Non generic list of objects 
@@ -6635,6 +6631,16 @@
     <member name="F:Aspose.CAD.FileFormats.Cad.CadConsts.CadCommon.ACADVER">
       <summary>
             Version of file format
+            </summary>
+    </member>
+    <member name="F:Aspose.CAD.FileFormats.Cad.CadConsts.CadCommon.CustomPropertyTag">
+      <summary>
+            The custom property tag
+            </summary>
+    </member>
+    <member name="F:Aspose.CAD.FileFormats.Cad.CadConsts.CadCommon.CustomProperty">
+      <summary>
+            The custom property.
             </summary>
     </member>
     <member name="F:Aspose.CAD.FileFormats.Cad.CadConsts.CadCommon.STANDARD_STYLE">
@@ -9078,7 +9084,7 @@
     <member name="T:Aspose.CAD.FileFormats.Cad.CadConsts.CadLwPolylineFlag">
       <summary>
             The Cad LWPOLYLINE flags.
-            <see cref="P:Aspose.CAD.FileFormats.Cad.CadObjects.CadLwPolyline.Flag" /></summary>
+            </summary>
     </member>
     <member name="F:Aspose.CAD.FileFormats.Cad.CadConsts.CadLwPolylineFlag.None">
       <summary>
@@ -13671,7 +13677,7 @@
             </summary>
       <param name="objects">The objects array.</param>
     </member>
-    <member name="M:Aspose.CAD.FileFormats.Cad.CadLayersList.GetLayersByName(System.String)">
+    <member name="M:Aspose.CAD.FileFormats.Cad.CadLayersList.GetLayer(System.String)">
       <summary>
             Gets list of layers by name.
             </summary>
@@ -16626,18 +16632,6 @@
       <returns>
             The Application Codes
             </returns>
-    </member>
-    <member name="M:Aspose.CAD.FileFormats.Cad.CadObjects.CadApplicationCodesContainer.GetAcadReactorsCodes">
-      <summary>
-            Gets the ACAD Reactors codes
-            </summary>
-      <returns>The Application Codes.</returns>
-    </member>
-    <member name="M:Aspose.CAD.FileFormats.Cad.CadObjects.CadApplicationCodesContainer.GetAcadXDictionaryCodes">
-      <summary>
-            Gets the ACAD XDictionary codes
-            </summary>
-      <returns>The Application Codes.</returns>
     </member>
     <member name="P:Aspose.CAD.FileFormats.Cad.CadObjects.CadApplicationCodesContainer.Codes">
       <summary>
@@ -21358,6 +21352,14 @@
       <summary>
                 Gets the full text (AdditionalText + Text).
             </summary>
+    </member>
+    <member name="P:Aspose.CAD.FileFormats.Cad.CadObjects.CadMText.FullClearText">
+      <summary>
+            Gets the full clear text.
+            </summary>
+      <value>
+            The full clear text.
+            </value>
     </member>
     <member name="P:Aspose.CAD.FileFormats.Cad.CadObjects.CadMText.TextStyleName">
       <summary>
@@ -29543,6 +29545,16 @@
             The CFF, CFF2, CF2 file format
             </summary>
     </member>
+    <member name="F:Aspose.CAD.FileFormat.OBJ">
+      <summary>
+            The OBJ file format
+            </summary>
+    </member>
+    <member name="F:Aspose.CAD.FileFormat.CadR2018">
+      <summary>
+            The CAD Release 2018 file format.
+            </summary>
+    </member>
     <member name="T:Aspose.CAD.IRasterImageRawDataLoader">
       <summary>
             The raster image raw data loader.
@@ -30563,161 +30575,6 @@
             </summary>
       <value>The minimal psd version.</value>
     </member>
-    <member name="T:Aspose.CAD.Font">
-      <summary>
-            Defines a particular format for text, including font face, size, and style attributes. This class cannot be inherited.
-            </summary>
-    </member>
-    <member name="M:Aspose.CAD.Font.#ctor(Aspose.CAD.Font,Aspose.CAD.FontStyle)">
-      <summary>
-            Initializes a new <see cref="T:Aspose.CAD.Font" /> that uses the specified existing <see cref="T:Aspose.CAD.Font" /> and <see cref="T:Aspose.CAD.FontStyle" /> enumeration.
-            </summary>
-      <param name="prototype">The existing <see cref="T:Aspose.CAD.Font" /> from which to create the new <see cref="T:Aspose.CAD.Font" />.</param>
-      <param name="newStyle">The <see cref="T:Aspose.CAD.FontStyle" /> to apply to the new <see cref="T:Aspose.CAD.Font" />. Multiple values of the <see cref="T:Aspose.CAD.FontStyle" /> enumeration can be combined with the OR operator.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="prototype" /> is null.</exception>
-    </member>
-    <member name="M:Aspose.CAD.Font.#ctor(System.String,System.Single)">
-      <summary>
-            Initializes a new <see cref="T:Aspose.CAD.Font" /> using a specified size. The character set is set to <see cref="F:Aspose.CAD.CharacterSet.Default" />, the graphics unit to <see cref="F:Aspose.CAD.GraphicsUnit.Point" />, the font style to <see cref="F:Aspose.CAD.FontStyle.Regular" />.
-            </summary>
-      <param name="fontName">A string representation of the <see cref="T:Aspose.CAD.Font" /> name.</param>
-      <param name="emSize">The em-size, in points, of the new font.</param>
-      <exception cref="T:System.ArgumentOutOfRangeException">
-        <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity or is not a valid number.</exception>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="fontName" /> is null.</exception>
-    </member>
-    <member name="M:Aspose.CAD.Font.#ctor(System.String,System.Single,Aspose.CAD.FontStyle)">
-      <summary>
-            Initializes a new <see cref="T:Aspose.CAD.Font" /> using a specified size and style. The character set is set to <see cref="F:Aspose.CAD.CharacterSet.Default" />, the graphics unit to <see cref="F:Aspose.CAD.GraphicsUnit.Point" />.
-            </summary>
-      <param name="fontName">A string representation of the <see cref="T:Aspose.CAD.Font" /> name.</param>
-      <param name="emSize">The em-size, in points, of the new font.</param>
-      <param name="style">The <see cref="T:Aspose.CAD.FontStyle" /> of the new font.</param>
-      <exception cref="T:System.ArgumentOutOfRangeException">
-        <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity or is not a valid number.</exception>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="fontName" /> is null.</exception>
-    </member>
-    <member name="M:Aspose.CAD.Font.#ctor(System.String,System.Single,Aspose.CAD.GraphicsUnit)">
-      <summary>
-            Initializes a new <see cref="T:Aspose.CAD.Font" /> using a specified size and unit. The character set is set to <see cref="F:Aspose.CAD.CharacterSet.Default" />, the style is set to <see cref="F:Aspose.CAD.FontStyle.Regular" />.
-            </summary>
-      <param name="fontName">A string representation of the <see cref="T:Aspose.CAD.Font" /> name.</param>
-      <param name="emSize">The em-size of the new font in the units specified by the <paramref name="unit" /> parameter.</param>
-      <param name="unit">The <see cref="T:Aspose.CAD.GraphicsUnit" /> of the new font.</param>
-      <exception cref="T:System.ArgumentOutOfRangeException">
-        <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity or is not a valid number.</exception>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="fontName" /> is null.</exception>
-    </member>
-    <member name="M:Aspose.CAD.Font.#ctor(System.String,System.Single,Aspose.CAD.FontStyle,Aspose.CAD.GraphicsUnit,Aspose.CAD.CharacterSet)">
-      <summary>
-            Initializes a new <see cref="T:Aspose.CAD.Font" /> using a specified size, style, unit, and character set.
-            </summary>
-      <param name="fontName">A string representation of the <see cref="T:Aspose.CAD.Font" /> name.</param>
-      <param name="emSize">The em-size of the new font in the units specified by the <paramref name="unit" /> parameter.</param>
-      <param name="style">The <see cref="T:Aspose.CAD.FontStyle" /> of the new font.</param>
-      <param name="unit">The <see cref="T:Aspose.CAD.GraphicsUnit" /> of the new font.</param>
-      <param name="characterSet">A character set to use for this font.</param>
-      <exception cref="T:System.ArgumentOutOfRangeException">
-        <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity or is not a valid number.</exception>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="fontName" /> is null.</exception>
-    </member>
-    <member name="M:Aspose.CAD.Font.#ctor(System.String,System.Single,Aspose.CAD.FontStyle,Aspose.CAD.GraphicsUnit)">
-      <summary>
-            Initializes a new <see cref="T:Aspose.CAD.Font" /> using a specified size, style, and unit.
-            </summary>
-      <param name="fontName">A string representation of the <see cref="T:Aspose.CAD.Font" /> name.</param>
-      <param name="emSize">The em-size of the new font in the units specified by the <paramref name="unit" /> parameter.</param>
-      <param name="style">The <see cref="T:Aspose.CAD.FontStyle" /> of the new font.</param>
-      <param name="unit">The <see cref="T:Aspose.CAD.GraphicsUnit" /> of the new font.</param>
-      <exception cref="T:System.ArgumentOutOfRangeException">
-        <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity or is not a valid number.</exception>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="fontName" /> is null.</exception>
-    </member>
-    <member name="M:Aspose.CAD.Font.DeepClone">
-      <summary>
-            Creates an exact deep copy of this <see cref="T:Aspose.CAD.Font" />.
-            </summary>
-      <returns>The <see cref="T:Aspose.CAD.Font" /> this method creates.</returns>
-    </member>
-    <member name="M:Aspose.CAD.Font.Equals(System.Object)">
-      <summary>
-            Indicates whether the specified object is a <see cref="T:Aspose.CAD.Font" /> and has the same property values as this <see cref="T:Aspose.CAD.Font" />.
-            </summary>
-      <param name="obj">The object to test.</param>
-      <returns>True if the <paramref name="obj" /> parameter is a <see cref="T:Aspose.CAD.Font" /> and has the same property values as this <see cref="T:Aspose.CAD.Font" />; otherwise, false.</returns>
-    </member>
-    <member name="M:Aspose.CAD.Font.GetHashCode">
-      <summary>
-            Gets the hash code for this <see cref="T:Aspose.CAD.Font" />.
-            </summary>
-      <returns>The hash code for this <see cref="T:Aspose.CAD.Font" />.</returns>
-    </member>
-    <member name="M:Aspose.CAD.Font.ToString">
-      <summary>
-            Returns a human-readable string representation of this <see cref="T:Aspose.CAD.Font" />.
-            </summary>
-      <returns>A string that represents this <see cref="T:Aspose.CAD.Font" />.</returns>
-    </member>
-    <member name="P:Aspose.CAD.Font.Bold">
-      <summary>
-            Gets a value indicating whether this <see cref="T:Aspose.CAD.Font" /> is bold.
-            </summary>
-      <value>True if this <see cref="T:Aspose.CAD.Font" /> is bold; otherwise, false.</value>
-    </member>
-    <member name="P:Aspose.CAD.Font.CharacterSet">
-      <summary>
-            Gets a byte value that specifies the character set that this <see cref="T:Aspose.CAD.Font" /> uses.
-            </summary>
-      <value>A character set that this <see cref="T:Aspose.CAD.Font" /> uses.</value>
-    </member>
-    <member name="P:Aspose.CAD.Font.Italic">
-      <summary>
-            Gets a value indicating whether this <see cref="T:Aspose.CAD.Font" /> is italic.
-            </summary>
-      <value>True if this <see cref="T:Aspose.CAD.Font" /> is italic; otherwise, false.</value>
-    </member>
-    <member name="P:Aspose.CAD.Font.Name">
-      <summary>
-            Gets the face name of this <see cref="T:Aspose.CAD.Font" />.
-            </summary>
-      <value>A string representation of the face name of this <see cref="T:Aspose.CAD.Font" />.</value>
-    </member>
-    <member name="P:Aspose.CAD.Font.Strikeout">
-      <summary>
-            Gets a value indicating whether this <see cref="T:Aspose.CAD.Font" /> specifies a horizontal line through the font.
-            </summary>
-      <value>True if this <see cref="T:Aspose.CAD.Font" /> has a horizontal line through it; otherwise, false.</value>
-    </member>
-    <member name="P:Aspose.CAD.Font.Underline">
-      <summary>
-            Gets a value indicating whether this <see cref="T:Aspose.CAD.Font" /> is underlined.
-            </summary>
-      <value>True if this <see cref="T:Aspose.CAD.Font" /> is underlined; otherwise, false.</value>
-    </member>
-    <member name="P:Aspose.CAD.Font.Style">
-      <summary>
-            Gets style information for this <see cref="T:Aspose.CAD.Font" />.
-            </summary>
-      <value>A <see cref="T:Aspose.CAD.FontStyle" /> enumeration that contains style information for this <see cref="T:Aspose.CAD.Font" />.</value>
-    </member>
-    <member name="P:Aspose.CAD.Font.Size">
-      <summary>
-            Gets the em-size of this <see cref="T:Aspose.CAD.Font" /> measured in the units specified by the <see cref="P:Aspose.CAD.Font.Unit" /> property.
-            </summary>
-      <value>The em-size of this <see cref="T:Aspose.CAD.Font" />.</value>
-    </member>
-    <member name="P:Aspose.CAD.Font.Unit">
-      <summary>
-            Gets the unit of measure for this <see cref="T:Aspose.CAD.Font" />.
-            </summary>
-      <value>A <see cref="T:Aspose.CAD.GraphicsUnit" /> that represents the unit of measure for this <see cref="T:Aspose.CAD.Font" />.</value>
-    </member>
     <member name="T:Aspose.CAD.FontStyle">
       <summary>
             Specifies style information applied to text.
@@ -31181,6 +31038,16 @@
             The vector rasterization options.
             </value>
     </member>
+    <member name="P:Aspose.CAD.ImageOptionsBase.Timeout">
+      <summary>
+            Timeout value for export operation
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.ImageOptionsBase.InterruptionToken">
+      <summary>
+            Token that can be used to interrupt export operation
+            </summary>
+    </member>
     <member name="T:Aspose.CAD.ImageOptions.BmpOptions">
       <summary>
             The bmp file format creation options.
@@ -31240,6 +31107,11 @@
             The border X.
             </value>
     </member>
+    <member name="P:Aspose.CAD.ImageOptions.VectorRasterizationOptions.Margins">
+      <summary>
+            Gets or sets Margins.
+            </summary>
+    </member>
     <member name="P:Aspose.CAD.ImageOptions.VectorRasterizationOptions.BorderY">
       <summary>
             Gets or sets the border Y.
@@ -31295,6 +31167,16 @@
       <value>
             The layout page sizes.
             </value>
+    </member>
+    <member name="P:Aspose.CAD.ImageOptions.VectorRasterizationOptions.RelativeScale">
+      <summary>
+            Scale of exported region relative to whole document's image. Calculated as ratio of corresponding dimension of exported region to larger dimension of exported document.
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.ImageOptions.VectorRasterizationOptions.RelativePosition">
+      <summary>
+            Position of top left corner of  exported region relative to whole document's image, in relative units - 0,0 is top left, 1,1 is bottom of document's image.
+            </summary>
     </member>
     <member name="T:Aspose.CAD.ImageOptions.CadRasterizationOptions">
       <summary>
@@ -31438,6 +31320,11 @@
             The quality.
             </value>
     </member>
+    <member name="P:Aspose.CAD.ImageOptions.CadRasterizationOptions.ExportAllLayoutContent">
+      <summary>
+            Gets or sets whether to export entities on layouts, which are outside plot area.
+            </summary>
+    </member>
     <member name="T:Aspose.CAD.ImageOptions.CadRenderResult">
       <summary>
             Represents result of rendering
@@ -31451,6 +31338,18 @@
     <member name="P:Aspose.CAD.ImageOptions.CadRenderResult.IsRenderComplete">
       <summary>
             Gets a value indicating whether rendering is successful
+            </summary>
+    </member>
+    <member name="T:Aspose.CAD.ImageOptions.DwfOptions">
+      <summary>
+            The DWF options.
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.ImageOptions.DwfOptions.TargetDwfInterface">
+      <summary>
+            Gets or sets target DWF interface.
+            0 - ePlot interface (default).
+            1 - eModel interface. 
             </summary>
     </member>
     <member name="T:Aspose.CAD.ImageOptions.GifOptions">
@@ -31732,6 +31631,11 @@
             Default is <see cref="F:Aspose.CAD.ImageOptions.PdfCompliance.Pdf15" />.
             </summary>
     </member>
+    <member name="P:Aspose.CAD.ImageOptions.PdfDocumentOptions.DigitalSignatureDetails">
+      <summary>
+            Gets or sets a digital signature details. If not set, then no signing will be performed.
+            </summary>
+    </member>
     <member name="T:Aspose.CAD.ImageOptions.PdfOptions">
       <summary>
             The PDF options.
@@ -31917,6 +31821,14 @@
             The arc quality.
             </value>
     </member>
+    <member name="P:Aspose.CAD.ImageOptions.RasterizationQuality.TextThicknessNormalization">
+      <summary>
+            Gets or sets a value indicating whether [text thickness normalization].
+            </summary>
+      <value>
+        <c>true</c> if [text thickness normalization]; otherwise, <c>false</c>.
+            </value>
+    </member>
     <member name="T:Aspose.CAD.ImageOptions.RasterizationQualityValue">
       <summary>
             RasterizationQuality
@@ -31971,6 +31883,13 @@
       <summary>
             Represents information with results of rendering
             </summary>
+    </member>
+    <member name="M:Aspose.CAD.ImageOptions.RenderResult.#ctor(System.String,Aspose.CAD.ImageOptions.RenderErrorCode)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.CAD.ImageOptions.RenderResult" /> class.
+            </summary>
+      <param name="message">The message.</param>
+      <param name="renderCode">The render code.</param>
     </member>
     <member name="P:Aspose.CAD.ImageOptions.RenderResult.Message">
       <summary>
@@ -32725,6 +32644,31 @@
             </summary>
       <value>The image bits per pixel count.</value>
     </member>
+    <member name="T:Aspose.CAD.ImageOptions.Margins">
+      <summary>
+            Margins class.
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.ImageOptions.Margins.Left">
+      <summary>
+            Gets or sets left margin.
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.ImageOptions.Margins.Right">
+      <summary>
+            Gets or sets right margin.
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.ImageOptions.Margins.Top">
+      <summary>
+            Gets or sets top margin.
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.ImageOptions.Margins.Bottom">
+      <summary>
+            Gets or sets bottom margin.
+            </summary>
+    </member>
     <member name="T:Aspose.CAD.ImageResizeSettings">
       <summary>
             Image resize settings class
@@ -32837,6 +32781,16 @@
       <param name="streamContainer">The stream container.</param>
       <param name="loadOptions">The load options.</param>
       <returns>A newly opened image instance.</returns>
+    </member>
+    <member name="M:Aspose.CAD.IImageLoader.CanLoad(Aspose.CAD.StreamContainer,Aspose.CAD.LoadOptions)">
+      <summary>
+            Determines whether this instance can load the specified stream container.
+            </summary>
+      <param name="streamContainer">The stream container.</param>
+      <param name="loadOptions">The load options.</param>
+      <returns>
+        <c>true</c> if this instance can load the specified stream container; otherwise, <c>false</c>.
+            </returns>
     </member>
     <member name="T:Aspose.CAD.IImageLoaderDescriptor">
       <summary>
@@ -32957,6 +32911,36 @@
             </summary>
       <param name="rectangle">The rectangle to load pixels from.</param>
       <param name="partialPixelLoader">The partial pixel loader.</param>
+    </member>
+    <member name="T:Aspose.CAD.InterruptionToken">
+      <summary>
+            Token that can be used to interrupt long operation
+            </summary>
+    </member>
+    <member name="T:Aspose.CAD.InterruptionTokenSource">
+      <summary>
+            Source that provides token used to interrupt long operations and triggers interruption. Must be disposed!
+            </summary>
+    </member>
+    <member name="M:Aspose.CAD.InterruptionTokenSource.#ctor">
+      <summary>
+            Creates source
+            </summary>
+    </member>
+    <member name="M:Aspose.CAD.InterruptionTokenSource.Dispose">
+      <summary>
+            Disposes source
+            </summary>
+    </member>
+    <member name="M:Aspose.CAD.InterruptionTokenSource.Interrupt">
+      <summary>
+            Triggers the interruption of operation
+            </summary>
+    </member>
+    <member name="P:Aspose.CAD.InterruptionTokenSource.Token">
+      <summary>
+            Token used to interrupt long operations
+            </summary>
     </member>
     <member name="T:Aspose.CAD.LicenseManagement.NamespaceDoc">
       <summary>
@@ -33881,128 +33865,6 @@
             Specifies substitution digits that correspond with the user's native script or language, which may be different from the official national language of the user's locale.
             </summary>
     </member>
-    <member name="T:Aspose.CAD.StringFormat">
-      <summary>
-            Encapsulates text layout information (such as alignment, orientation and tab stops) display manipulations (such as ellipsis insertion and national digit substitution) and OpenType features. This class cannot be inherited.
-            </summary>
-    </member>
-    <member name="M:Aspose.CAD.StringFormat.#ctor">
-      <summary>
-            Initializes a new <see cref="T:Aspose.CAD.StringFormat" /> object.
-            </summary>
-    </member>
-    <member name="M:Aspose.CAD.StringFormat.#ctor(Aspose.CAD.StringFormatFlags)">
-      <summary>
-            Initializes a new <see cref="T:Aspose.CAD.StringFormat" /> object with the specified <see cref="T:Aspose.CAD.StringFormatFlags" /> enumeration and language.
-            </summary>
-      <param name="options">The <see cref="T:Aspose.CAD.StringFormatFlags" /> enumeration for the new <see cref="T:Aspose.CAD.StringFormat" /> object.</param>
-    </member>
-    <member name="M:Aspose.CAD.StringFormat.#ctor(Aspose.CAD.StringFormat)">
-      <summary>
-            Initializes a new <see cref="T:Aspose.CAD.StringFormat" /> object from the specified existing <see cref="T:Aspose.CAD.StringFormat" /> object.
-            </summary>
-      <param name="format">The <see cref="T:Aspose.CAD.StringFormat" /> object from which to initialize the new <see cref="T:Aspose.CAD.StringFormat" /> object.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="format" /> is null.</exception>
-    </member>
-    <member name="M:Aspose.CAD.StringFormat.DeepClone">
-      <summary>
-            Creates a deep clone of this <see cref="T:Aspose.CAD.StringFormat" /> object.
-            </summary>
-      <returns>
-            The deep clone of the current <see cref="T:Aspose.CAD.StringFormat" />.
-            </returns>
-    </member>
-    <member name="M:Aspose.CAD.StringFormat.SetTabStops(System.Single,System.Single[])">
-      <summary>
-            Sets tab stops for this <see cref="T:Aspose.CAD.StringFormat" /> object.
-            </summary>
-      <param name="firstTabOffset">The number of spaces between the beginning of a line of text and the first tab stop.</param>
-      <param name="tabStops">An array of distances between tab stops in the units specified by the <see cref="P:Aspose.CAD.Graphics.PageUnit" /> property.</param>
-    </member>
-    <member name="M:Aspose.CAD.StringFormat.ToString">
-      <summary>
-            Converts this <see cref="T:Aspose.CAD.StringFormat" /> object to a human-readable string.
-            </summary>
-      <returns>
-            A string representation of this <see cref="T:Aspose.CAD.StringFormat" /> object.
-            </returns>
-    </member>
-    <member name="P:Aspose.CAD.StringFormat.GenericDefault">
-      <summary>
-            Gets a generic default <see cref="T:Aspose.CAD.StringFormat" /> object.
-            </summary>
-      <value>The generic default <see cref="T:Aspose.CAD.StringFormat" /> object.</value>
-    </member>
-    <member name="P:Aspose.CAD.StringFormat.GenericTypographic">
-      <summary>
-            Gets a generic typographic <see cref="T:Aspose.CAD.StringFormat" /> object.
-            </summary>
-      <value>A generic typographic <see cref="T:Aspose.CAD.StringFormat" /> object.</value>
-    </member>
-    <member name="P:Aspose.CAD.StringFormat.FormatFlags">
-      <summary>
-            Gets or sets a <see cref="T:Aspose.CAD.StringFormatFlags" /> enumeration that contains formatting information.
-            </summary>
-      <value>A <see cref="T:Aspose.CAD.StringFormatFlags" /> enumeration that contains formatting information.</value>
-    </member>
-    <member name="P:Aspose.CAD.StringFormat.Alignment">
-      <summary>
-            Gets or sets text alignment information on the vertical plane.
-            </summary>
-      <value>A <see cref="T:Aspose.CAD.StringAlignment" /> enumeration that specifies text alignment information.</value>
-    </member>
-    <member name="P:Aspose.CAD.StringFormat.LineAlignment">
-      <summary>
-            Gets or sets the line alignment on the horizontal plane.
-            </summary>
-      <value>A <see cref="T:Aspose.CAD.StringAlignment" /> enumeration that represents the line alignment.</value>
-    </member>
-    <member name="P:Aspose.CAD.StringFormat.HotkeyPrefix">
-      <summary>
-            Gets or sets the <see cref="T:Aspose.CAD.HotkeyPrefix" /> object for this <see cref="T:Aspose.CAD.StringFormat" /> object.
-            </summary>
-      <value>The <see cref="T:Aspose.CAD.HotkeyPrefix" /> object for this <see cref="T:Aspose.CAD.StringFormat" /> object, the default is <see cref="F:Aspose.CAD.HotkeyPrefix.None" />.</value>
-    </member>
-    <member name="P:Aspose.CAD.StringFormat.Trimming">
-      <summary>
-            Gets or sets the <see cref="T:Aspose.CAD.StringTrimming" /> enumeration for this <see cref="T:Aspose.CAD.StringFormat" /> object.
-            </summary>
-      <value>A <see cref="T:Aspose.CAD.StringTrimming" /> enumeration that indicates how text drawn with this <see cref="T:Aspose.CAD.StringFormat" /> object is trimmed when it exceeds the edges of the layout rectangle.</value>
-    </member>
-    <member name="P:Aspose.CAD.StringFormat.DigitSubstitutionMethod">
-      <summary>
-            Gets or sets the method to be used for digit substitution.
-            </summary>
-      <value>A <see cref="T:Aspose.CAD.StringDigitSubstitute" /> enumeration value that specifies how to substitute characters in a string that cannot be displayed because they are not supported by the current font.</value>
-      <remarks>The setter is introduced for the obsolete method SetDigitSubstitution.</remarks>
-    </member>
-    <member name="P:Aspose.CAD.StringFormat.DigitSubstitutionLanguage">
-      <summary>
-            Gets or sets the language that is used when local digits are substituted for western digits.
-            </summary>
-      <value>A National Language Support (NLS) language identifier that identifies the language that will be used when local digits are substituted for western digits.
-            You can pass the <see cref="P:System.Globalization.CultureInfo.LCID" /> property of a <see cref="T:System.Globalization.CultureInfo" /> object as the NLS language identifier.
-            For example, suppose you create a <see cref="T:System.Globalization.CultureInfo" /> object by passing the string "ar-EG" to a <see cref="T:System.Globalization.CultureInfo" /> constructor.
-            If you pass the <see cref="P:System.Globalization.CultureInfo.LCID" /> property of that <see cref="T:System.Globalization.CultureInfo" /> object along with.
-            <see cref="F:Aspose.CAD.StringDigitSubstitute.Traditional" /> to the <see cref="M:Aspose.CAD.StringFormat.SetDigitSubstitution(System.Int32,Aspose.CAD.StringDigitSubstitute)" /> method,
-            then Arabic-Indic digits will be substituted for western digits at display time.</value>
-      <remarks>The setter is introduced for the obsolete method SetDigitSubstitution.</remarks>
-    </member>
-    <member name="P:Aspose.CAD.StringFormat.FirstTabOffset">
-      <summary>
-            Gets the number of spaces between the beginning of a line of text and the first tab stop.
-            </summary>
-      <value>The first tab offset.</value>
-      <remarks>The property is introduced for removed method GetTabStops.</remarks>
-    </member>
-    <member name="P:Aspose.CAD.StringFormat.TabStops">
-      <summary>
-            Gets an array of distances between tab stops in the units specified by the <see cref="P:Aspose.CAD.Graphics.PageUnit" /> property.
-            </summary>
-      <value>The tab stops.</value>
-      <remarks>The property is introduced for removed method GetTabStops.</remarks>
-    </member>
     <member name="T:Aspose.CAD.StringFormatFlags">
       <summary>
             Specifies the display and layout information for text strings.
@@ -34387,14 +34249,14 @@
             Unitless unit.
             </summary>
     </member>
-    <member name="T:Aspose.Imaging.ApsBuilder.Dib.NamespaceDoc">
-      <summary>
-                The namespace DIB header processing.
-            </summary>
-    </member>
     <member name="T:Aspose.CAD.DisposableObject">
       <summary>
             Represents disposable object.
+            </summary>
+    </member>
+    <member name="M:Aspose.CAD.DisposableObject.Finalize">
+      <summary>
+            Finalizes an instance of the <see cref="T:Aspose.CAD.DisposableObject" /> class.
             </summary>
     </member>
     <member name="M:Aspose.CAD.DisposableObject.Dispose">
@@ -34423,6 +34285,21 @@
             </summary>
       <value>
         <c>true</c> if disposed; otherwise, <c>false</c>.</value>
+    </member>
+    <member name="T:Aspose.Imaging.ProgressManagement.NamespaceDoc">
+      <summary>
+            The namespace contains progress handler classes
+            </summary>
+    </member>
+    <member name="T:Aspose.Imaging.ApsBuilder.Dib.NamespaceDoc">
+      <summary>
+                The namespace DIB header processing.
+            </summary>
+    </member>
+    <member name="T:Aspose.Imaging.AsyncTask.NamespaceDoc">
+      <summary>
+            The namespace handles AsyncTask processing.
+            </summary>
     </member>
     <member name="T:Aspose.Imaging.Brushes.NamespaceDoc">
       <summary>
@@ -34466,6 +34343,15 @@
             </summary>
       <returns>
                 The <see cref="T:System.Int32" />.
+            </returns>
+    </member>
+    <member name="M:Aspose.CAD.CmykColor.Equals(System.Object)">
+      <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+      <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+      <returns>
+        <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
             </returns>
     </member>
     <member name="M:Aspose.CAD.CmykColor.ToCmyk(System.Int32[])">
@@ -35923,6 +35809,11 @@
             </summary>
       <param name="message">The message.</param>
       <param name="innerException">The inner exception.</param>
+    </member>
+    <member name="T:Aspose.Imaging.Evalute.NamespaceDoc">
+      <summary>
+                The namespace DIB header processing.
+            </summary>
     </member>
     <member name="T:Aspose.CAD.Exif.Enums.ExifColorSpace">
       <summary>
@@ -40455,22 +40346,6 @@
             A <see cref="T:System.String" /> that represents this instance.
             </returns>
     </member>
-    <member name="M:Aspose.CAD.FileFormats.Tiff.TiffRational.op_Equality(Aspose.CAD.FileFormats.Tiff.TiffRational,Aspose.CAD.FileFormats.Tiff.TiffRational)">
-      <summary>
-            Returns the comparison result of the two rational numbers.
-            </summary>
-      <param name="rational1">The first rational to compare.</param>
-      <param name="rational2">The second rational to compare.</param>
-      <returns>The comparison result.</returns>
-    </member>
-    <member name="M:Aspose.CAD.FileFormats.Tiff.TiffRational.op_Inequality(Aspose.CAD.FileFormats.Tiff.TiffRational,Aspose.CAD.FileFormats.Tiff.TiffRational)">
-      <summary>
-            Returns the negative comparison result of the two rational numbers.
-            </summary>
-      <param name="rational1">The first rational to compare.</param>
-      <param name="rational2">The second rational to compare.</param>
-      <returns>The negative comparison result.</returns>
-    </member>
     <member name="M:Aspose.CAD.FileFormats.Tiff.TiffRational.Equals(System.Object)">
       <summary>
             Determines whether the specified <see cref="T:System.Object" /> is equal to this instance.
@@ -40590,22 +40465,6 @@
       <returns>
             A <see cref="T:System.String" /> that represents this instance.
             </returns>
-    </member>
-    <member name="M:Aspose.CAD.FileFormats.Tiff.TiffSRational.op_Equality(Aspose.CAD.FileFormats.Tiff.TiffSRational,Aspose.CAD.FileFormats.Tiff.TiffSRational)">
-      <summary>
-            Returns the comparison result of the two rational numbers.
-            </summary>
-      <param name="rational1">The first rational to compare.</param>
-      <param name="rational2">The second rational to compare.</param>
-      <returns>The comparison result.</returns>
-    </member>
-    <member name="M:Aspose.CAD.FileFormats.Tiff.TiffSRational.op_Inequality(Aspose.CAD.FileFormats.Tiff.TiffSRational,Aspose.CAD.FileFormats.Tiff.TiffSRational)">
-      <summary>
-            Returns the negative comparison result of the two rational numbers.
-            </summary>
-      <param name="rational1">The first rational to compare.</param>
-      <param name="rational2">The second rational to compare.</param>
-      <returns>The negative comparison result.</returns>
     </member>
     <member name="M:Aspose.CAD.FileFormats.Tiff.TiffSRational.Equals(System.Object)">
       <summary>
@@ -42065,6 +41924,11 @@
       <exception cref="T:System.NotImplementedException">
       </exception>
     </member>
+    <member name="T:Aspose.Imaging.FlatArray.Exceptions.NamespaceDoc">
+      <summary>
+            The namespace handles Psd file format processing.
+            </summary>
+    </member>
     <member name="T:Aspose.Imaging.ImageFilters.FilterOptions.NamespaceDoc">
       <summary>
                 The namespace handles Filter options.
@@ -42262,6 +42126,11 @@
             The product release date.
             </summary>
     </member>
+    <member name="T:Aspose.Imaging.MemoryManagement.NamespaceDoc">
+      <summary>
+            The namespace contains memory management routines.
+            </summary>
+    </member>
     <member name="T:Aspose.CAD.ImageOptions.RdOptimizerSettings">
       <summary>
             RD optimizer settings class
@@ -42435,7 +42304,7 @@
             </summary>
       <param name="index">The range index.</param>
       <returns>The array of <see cref="T:System.Int32" /></returns>
-      <exception cref="T:System.IndexOutOfRangeException">Index is out of range</exception>
+      <exception cref="T:System.ArgumentException">Index is out of range</exception>
     </member>
     <member name="M:Aspose.CAD.IntRange.GetRange(System.Int32,System.Int32,System.Int32)">
       <summary>
@@ -44707,11 +44576,6 @@
             Represents the XMP Rendition.
             </summary>
     </member>
-    <member name="F:Aspose.CAD.Xmp.Types.Derived.RenditionClass.DefinedValues">
-      <summary>
-            The defined values
-            </summary>
-    </member>
     <member name="M:Aspose.CAD.Xmp.Types.Derived.RenditionClass.#ctor">
       <summary>
             Initializes a new instance of the <see cref="T:Aspose.CAD.Xmp.Types.Derived.RenditionClass" /> class.
@@ -44745,6 +44609,11 @@
       <value>
             The value.
             </value>
+    </member>
+    <member name="P:Aspose.CAD.Xmp.Types.Derived.RenditionClass.DefinedValues">
+      <summary>
+            The defined values
+            </summary>
     </member>
     <member name="T:Aspose.CAD.Xmp.Types.Derived.XmpAgentName">
       <summary>
@@ -44863,7 +44732,7 @@
     </member>
     <member name="T:Aspose.CAD.Xmp.XmpArray">
       <summary>
-            Represents Xmp Array in <see cref="T:Aspose.CAD.Xmp.XmpPackage" />. todo: Array may contain complex data.
+            Represents Xmp Array in <see cref="T:Aspose.CAD.Xmp.XmpPackage" />. TODO: Array may contain complex data.
             </summary>
     </member>
     <member name="F:Aspose.CAD.Xmp.XmpArray.arrayType">
@@ -44978,7 +44847,7 @@
       <summary>
             Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
             </summary>
-      <param name="other">The <see cref="T:System.Object" /> to compare with this instance.</param>
+      <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
       <returns>
         <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
             </returns>
@@ -45031,7 +44900,7 @@
       <summary>
             Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
             </summary>
-      <param name="other">The <see cref="T:System.Object" /> to compare with this instance.</param>
+      <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
       <returns>
         <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
             </returns>
@@ -45339,7 +45208,7 @@
       <summary>
             Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
             </summary>
-      <param name="other">The <see cref="T:System.Object" /> to compare with this instance.</param>
+      <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
       <returns>
         <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
             </returns>
@@ -48213,6 +48082,26 @@
       <param name="message">The exception message.</param>
       <param name="innerException">The inner exception.</param>
     </member>
+    <member name="T:Aspose.Imaging.FileFormats.Psd.Layers.LayerResources.VectorPaths.NamespaceDoc">
+      <summary>
+            The namespace contains PSD Vector Paths.
+            </summary>
+    </member>
+    <member name="T:Aspose.Imaging.FileFormats.Psd.Layers.FillLayers.NamespaceDoc">
+      <summary>
+            The namespace contains Fill Layers
+            </summary>
+    </member>
+    <member name="T:Aspose.Imaging.FileFormats.Psd.Layers.FillSettings.NamespaceDoc">
+      <summary>
+            The namespace contains Fill Settings classes
+            </summary>
+    </member>
+    <member name="T:Aspose.Imaging.FileFormats.Psd.Layers.LayerEffects.NamespaceDoc">
+      <summary>
+            The namespace contains Layer Effects wrappers
+            </summary>
+    </member>
     <member name="T:Aspose.CAD.FileFormats.Psd.ColorModes">
       <summary>
             Represents the psd file format color modes.
@@ -48263,9 +48152,9 @@
             The namespace contains PSD adjustment layers.
             </summary>
     </member>
-    <member name="T:Aspose.Imaging.FileFormats.Psd.Layers.LayerEffects.NamespaceDoc">
+    <member name="T:Aspose.Imaging.FileFormats.Psd.Layers.LayerResources.Lfx2Resources.NamespaceDoc">
       <summary>
-            The namespace contains Layer Effects wrappers
+            The namespace contains <see cref="T:Aspose.Imaging.FileFormats.Psd.Layers.LayerResources.Lfx2Resource" /> linked classes
             </summary>
     </member>
     <member name="T:Aspose.Imaging.FileFormats.Psd.Layers.LayerResources.NamespaceDoc">
@@ -48291,6 +48180,11 @@
     <member name="T:Aspose.Imaging.FileFormats.Psd.Layers.NamespaceGroupDoc">
       <summary>
             The namespace contains PSD file format layers.
+            </summary>
+    </member>
+    <member name="T:Aspose.Imaging.FileFormats.Psd.Layers.Text.NamespaceDoc">
+      <summary>
+            The namespace handles Psd file format processing.
             </summary>
     </member>
     <member name="T:Aspose.Imaging.FileFormats.Psd.NamespaceDoc">
@@ -48345,11 +48239,6 @@
             The namespace contains PSD file format resource entities.
             </summary>
     </member>
-    <member name="T:Aspose.Imaging.FileFormats.Psd.Resources.NamespaceGroupDoc">
-      <summary>
-            The namespace contains PSD file format resource entities.
-            </summary>
-    </member>
     <member name="T:Aspose.Imaging.FileFormats.Psd.Resources.ResolutionEnums.NamespaceDoc">
       <summary>
             The namespace handles Psd resources resolution units
@@ -48373,6 +48262,11 @@
     <member name="T:Aspose.Imaging.ImageLoadOptions.NamespaceDoc">
       <summary>
             The namespace contains different file format load options.
+            </summary>
+    </member>
+    <member name="T:Aspose.Imaging.FileFormats.Svg.Graphics.NamespaceDoc">
+      <summary>
+            The namespace for drawing on Svg.
             </summary>
     </member>
     <member name="T:Aspose.Imaging.FileFormats.Svg.NamespaceDoc">

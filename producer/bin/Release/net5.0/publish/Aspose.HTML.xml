@@ -4281,6 +4281,11 @@
             Specific options data class.
             </summary>
     </member>
+    <member name="M:Aspose.Html.Saving.ImageSaveOptions.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.Html.Saving.ImageSaveOptions" /> class; <see cref="F:Aspose.Html.Rendering.Image.ImageFormat.Png" /> will be used as default image format.
+            </summary>
+    </member>
     <member name="M:Aspose.Html.Saving.ImageSaveOptions.#ctor(Aspose.Html.Rendering.Image.ImageFormat)">
       <summary>
             Image format <see cref="T:Aspose.Html.Rendering.Image.ImageFormat" /> based on initialization
@@ -5691,8 +5696,7 @@
             </summary>
       <param name="document">Conversion source <see cref="T:Aspose.Html.HTMLDocument" />.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">Conversion result wrapped in
-            <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(Aspose.Html.Url,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -5700,8 +5704,7 @@
             </summary>
       <param name="url">The document URL.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">Conversion result wrapped in
-            <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -5710,8 +5713,7 @@
       <param name="url">The document URL.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">Conversion result wrapped in
-            <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(System.String,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -5719,8 +5721,7 @@
             </summary>
       <param name="sourcePath">Html file source path.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">Conversion result wrapped in
-            <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -5729,8 +5730,7 @@
       <param name="sourcePath">Html file source path.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">Conversion result wrapped in
-            <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(System.String,System.String,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -5739,8 +5739,7 @@
       <param name="content">Inline string html content.</param>
       <param name="baseUri">The base URI of the document.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">Conversion result wrapped in
-            <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(System.String,System.String,Aspose.Html.Configuration,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -5750,8 +5749,7 @@
       <param name="baseUri">The base URI of the document.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">Conversion result wrapped in
-            <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(Aspose.Html.HTMLDocument,Aspose.Html.Saving.MHTMLSaveOptions,System.String)">
       <summary>
@@ -5942,8 +5940,7 @@
             </summary>
       <param name="document">Conversion source.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(Aspose.Html.Url,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -5951,8 +5948,7 @@
             </summary>
       <param name="url">The document URL.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -5961,8 +5957,7 @@
       <param name="url">The document URL.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(System.String,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -5970,8 +5965,7 @@
             </summary>
       <param name="sourcePath">Html file source path.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -5980,8 +5974,7 @@
       <param name="sourcePath">Html file source path.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(System.String,System.String,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -5990,8 +5983,7 @@
       <param name="content">Inline string html content.</param>
       <param name="baseUri">The base URI of the document.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(System.String,System.String,Aspose.Html.Configuration,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6001,8 +5993,7 @@
       <param name="baseUri">The base URI of the document.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(Aspose.Html.HTMLDocument,Aspose.Html.Saving.ImageSaveOptions,System.String)">
       <summary>
@@ -6071,8 +6062,7 @@
             </summary>
       <param name="document">Conversion source.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(Aspose.Html.Url,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6080,8 +6070,7 @@
             </summary>
       <param name="url">The document URL.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6090,8 +6079,7 @@
       <param name="url">The document URL.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(System.String,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6099,8 +6087,7 @@
             </summary>
       <param name="sourcePath">Html file source path.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6109,8 +6096,7 @@
       <param name="sourcePath">Html file source path.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(System.String,System.String,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6119,8 +6105,7 @@
       <param name="content">Inline string html content.</param>
       <param name="baseUri">The base URI of the document.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertHTML(System.String,System.String,Aspose.Html.Configuration,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6130,8 +6115,7 @@
       <param name="baseUri">The base URI of the document.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(Aspose.Html.Dom.Svg.SVGDocument,Aspose.Html.Saving.XpsSaveOptions,System.String)">
       <summary>
@@ -6200,8 +6184,7 @@
             </summary>
       <param name="document">Conversion source.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(Aspose.Html.Url,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6209,8 +6192,7 @@
             </summary>
       <param name="url">The document URL.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6219,8 +6201,7 @@
       <param name="url">The document URL.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(System.String,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6228,8 +6209,7 @@
             </summary>
       <param name="sourcePath">Svg file source path.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6238,8 +6218,7 @@
       <param name="sourcePath">Svg file source path.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(System.String,System.String,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6248,8 +6227,7 @@
       <param name="content">Inline string svg content.</param>
       <param name="baseUri">The base URI of the document.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(System.String,System.String,Aspose.Html.Configuration,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6259,8 +6237,7 @@
       <param name="baseUri">The base URI of the document.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(Aspose.Html.Dom.Svg.SVGDocument,Aspose.Html.Saving.PdfSaveOptions,System.String)">
       <summary>
@@ -6329,8 +6306,7 @@
             </summary>
       <param name="document">Conversion source.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(Aspose.Html.Url,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6338,8 +6314,7 @@
             </summary>
       <param name="url">The document URL.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6348,8 +6323,7 @@
       <param name="url">The document URL.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(System.String,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6357,8 +6331,7 @@
             </summary>
       <param name="sourcePath">Svg file source path.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6367,8 +6340,7 @@
       <param name="sourcePath">Svg file source path.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(System.String,System.String,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6377,8 +6349,7 @@
       <param name="content">Source document content.</param>
       <param name="baseUri">The base URI of the document.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(System.String,System.String,Aspose.Html.Configuration,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6388,8 +6359,7 @@
       <param name="baseUri">The base URI of the document.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(Aspose.Html.Dom.Svg.SVGDocument,Aspose.Html.Saving.ImageSaveOptions,System.String)">
       <summary>
@@ -6458,8 +6428,7 @@
             </summary>
       <param name="document">Conversion source.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(Aspose.Html.Url,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6467,8 +6436,7 @@
             </summary>
       <param name="url">The document URL.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6477,8 +6445,7 @@
       <param name="url">The document URL.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(System.String,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6486,8 +6453,7 @@
             </summary>
       <param name="sourcePath">Svg file source path.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6496,8 +6462,7 @@
       <param name="sourcePath">Svg file source path.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(System.String,System.String,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6506,8 +6471,7 @@
       <param name="content">Inline string svg content.</param>
       <param name="baseUri">The base URI of the document.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertSVG(System.String,System.String,Aspose.Html.Configuration,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6517,14 +6481,29 @@
       <param name="baseUri">The base URI of the document.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.IO.Stream,Aspose.Html.Saving.XpsSaveOptions,System.String)">
       <summary>
             Convert epub source to xps. Result is xps file.
             </summary>
       <param name="stream">Conversion source.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.String,Aspose.Html.Saving.XpsSaveOptions,System.String)">
+      <summary>
+            Convert epub source to xps. Result is xps file.
+            </summary>
+      <param name="sourcePath">Conversion source path.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(Aspose.Html.Url,Aspose.Html.Saving.XpsSaveOptions,System.String)">
+      <summary>
+            Convert epub source to xps. Result is xps file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
       <param name="options">Conversion options.</param>
       <param name="outputPath">Output file path.</param>
     </member>
@@ -6537,14 +6516,47 @@
       <param name="options">Conversion options.</param>
       <param name="outputPath">Output file path.</param>
     </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.XpsSaveOptions,System.String)">
+      <summary>
+            Convert epub source to xps. Result is xps file.
+            </summary>
+      <param name="sourcePath">Conversion epub source file path.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.XpsSaveOptions,System.String)">
+      <summary>
+            Convert epub source to xps. Result is xps file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.IO.Stream,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
             Convert epub source to xps. Result is xps file.
             </summary>
       <param name="stream">Conversion source.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.String,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert epub source to xps. Result is xps file.
+            </summary>
+      <param name="sourcePath">Conversion epub source file path.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(Aspose.Html.Url,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert epub source to xps. Result is xps file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.IO.Stream,Aspose.Html.Configuration,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6553,14 +6565,47 @@
       <param name="stream">Conversion source.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert epub source to xps. Result is xps file.
+            </summary>
+      <param name="sourcePath">Conversion epub source file path.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert epub source to xps. Result is xps file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.IO.Stream,Aspose.Html.Saving.PdfSaveOptions,System.String)">
       <summary>
             Convert epub source to pdf. Result is pdf file.
             </summary>
       <param name="stream">Conversion source.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.String,Aspose.Html.Saving.PdfSaveOptions,System.String)">
+      <summary>
+            Convert epub source to pdf. Result is pdf file.
+            </summary>
+      <param name="sourcePath">Conversion epub source file path.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(Aspose.Html.Url,Aspose.Html.Saving.PdfSaveOptions,System.String)">
+      <summary>
+            Convert epub source to pdf. Result is pdf file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
       <param name="options">Conversion options.</param>
       <param name="outputPath">Output file path.</param>
     </member>
@@ -6573,14 +6618,47 @@
       <param name="options">Conversion options.</param>
       <param name="outputPath">Output file path.</param>
     </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.PdfSaveOptions,System.String)">
+      <summary>
+            Convert epub source to pdf. Result is pdf file.
+            </summary>
+      <param name="sourcePath">Conversion epub source file path.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.PdfSaveOptions,System.String)">
+      <summary>
+            Convert epub source to pdf. Result is pdf file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.IO.Stream,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
             Convert epub source to pdf. Result is pdf file.
             </summary>
       <param name="stream">Conversion source.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.String,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert epub source to pdf. Result is pdf file.
+            </summary>
+      <param name="sourcePath">Conversion epub source file path.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(Aspose.Html.Url,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert epub source to pdf. Result is pdf file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.IO.Stream,Aspose.Html.Configuration,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6589,14 +6667,47 @@
       <param name="stream">Conversion source.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert epub source to pdf. Result is pdf file.
+            </summary>
+      <param name="sourcePath">Conversion epub source file path.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert epub source to pdf. Result is pdf file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.IO.Stream,Aspose.Html.Saving.ImageSaveOptions,System.String)">
       <summary>
             Convert epub source to image. Result is image file.
             </summary>
       <param name="stream">Conversion source.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.String,Aspose.Html.Saving.ImageSaveOptions,System.String)">
+      <summary>
+            Convert epub source to image. Result is image file.
+            </summary>
+      <param name="sourcePath">Conversion epub source file path.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(Aspose.Html.Url,Aspose.Html.Saving.ImageSaveOptions,System.String)">
+      <summary>
+            Convert epub source to image. Result is image file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
       <param name="options">Conversion options.</param>
       <param name="outputPath">Output file path.</param>
     </member>
@@ -6609,14 +6720,47 @@
       <param name="options">Conversion options.</param>
       <param name="outputPath">Output file path.</param>
     </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.ImageSaveOptions,System.String)">
+      <summary>
+            Convert epub source to image. Result is image file.
+            </summary>
+      <param name="sourcePath">Conversion epub source file path.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.ImageSaveOptions,System.String)">
+      <summary>
+            Convert epub source to image. Result is image file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.IO.Stream,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
             Convert epub source to image. Result is image file.
             </summary>
       <param name="stream">Conversion source.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.String,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert epub source to image. Result is image file.
+            </summary>
+      <param name="sourcePath">Conversion epub source file path.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(Aspose.Html.Url,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert epub source to image. Result is image file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.IO.Stream,Aspose.Html.Configuration,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
@@ -6625,8 +6769,25 @@
       <param name="stream">Conversion source.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert epub source to image. Result is image file.
+            </summary>
+      <param name="sourcePath">Conversion epub source file path.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertEPUB(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert epub source to image. Result is image file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertMarkdown(System.IO.Stream,System.String)">
       <summary>
@@ -6696,7 +6857,23 @@
       <summary>
             Convert mhtml source to xps. Result is xps file.
             </summary>
-      <param name="stream">Conversion source.</param>
+      <param name="stream">Conversion source stream.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(System.String,Aspose.Html.Saving.XpsSaveOptions,System.String)">
+      <summary>
+            Convert mhtml source to xps. Result is xps file.
+            </summary>
+      <param name="sourcePath">Conversion mhtml source file path.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(Aspose.Html.Url,Aspose.Html.Saving.XpsSaveOptions,System.String)">
+      <summary>
+            Convert mhtml source to xps. Result is xps file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
       <param name="options">Conversion options.</param>
       <param name="outputPath">Output file path.</param>
     </member>
@@ -6704,7 +6881,25 @@
       <summary>
             Convert mhtml source to xps. Result is xps file.
             </summary>
-      <param name="stream">Conversion source.</param>
+      <param name="stream">Conversion source stream.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.XpsSaveOptions,System.String)">
+      <summary>
+            Convert mhtml source to xps. Result is xps file.
+            </summary>
+      <param name="sourcePath">Conversion mhtml source file path.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.XpsSaveOptions,System.String)">
+      <summary>
+            Convert mhtml source to xps. Result is xps file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
       <param name="outputPath">Output file path.</param>
@@ -6713,26 +6908,74 @@
       <summary>
             Convert mhtml source to xps. Result is xps file.
             </summary>
-      <param name="stream">Conversion source.</param>
+      <param name="stream">Conversion source stream.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(System.String,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert mhtml source to xps. Result is xps file.
+            </summary>
+      <param name="sourcePath">Conversion mhtml source file path.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(Aspose.Html.Url,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert mhtml source to xps. Result is xps file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(System.IO.Stream,Aspose.Html.Configuration,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
             Convert mhtml source to xps. Result is xps file.
             </summary>
-      <param name="stream">Conversion source.</param>
+      <param name="stream">Conversion source stream.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert mhtml source to xps. Result is xps file.
+            </summary>
+      <param name="sourcePath">Conversion mhtml source file path.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.XpsSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert mhtml source to xps. Result is xps file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(System.IO.Stream,Aspose.Html.Saving.PdfSaveOptions,System.String)">
       <summary>
             Convert mhtml source to pdf. Result is pdf file.
             </summary>
-      <param name="stream">Conversion source.</param>
+      <param name="stream">Conversion source stream.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(System.String,Aspose.Html.Saving.PdfSaveOptions,System.String)">
+      <summary>
+            Convert mhtml source to pdf. Result is pdf file.
+            </summary>
+      <param name="sourcePath">Conversion mhtml source file path.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(Aspose.Html.Url,Aspose.Html.Saving.PdfSaveOptions,System.String)">
+      <summary>
+            Convert mhtml source to pdf. Result is pdf file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
       <param name="options">Conversion options.</param>
       <param name="outputPath">Output file path.</param>
     </member>
@@ -6740,7 +6983,25 @@
       <summary>
             Convert mhtml source to pdf. Result is pdf file.
             </summary>
-      <param name="stream">Conversion source.</param>
+      <param name="stream">Conversion source stream.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.PdfSaveOptions,System.String)">
+      <summary>
+            Convert mhtml source to pdf. Result is pdf file.
+            </summary>
+      <param name="sourcePath">Conversion mhtml source file path.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.PdfSaveOptions,System.String)">
+      <summary>
+            Convert mhtml source to pdf. Result is pdf file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
       <param name="outputPath">Output file path.</param>
@@ -6749,26 +7010,74 @@
       <summary>
             Convert mhtml source to pdf. Result is pdf file.
             </summary>
-      <param name="stream">Conversion source.</param>
+      <param name="stream">Conversion source stream.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(System.String,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert mhtml source to pdf. Result is pdf file.
+            </summary>
+      <param name="sourcePath">Conversion mhtml source file path.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(Aspose.Html.Url,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert mhtml source to pdf. Result is pdf file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(System.IO.Stream,Aspose.Html.Configuration,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
             Convert mhtml source to pdf. Result is pdf file.
             </summary>
-      <param name="stream">Conversion source.</param>
+      <param name="stream">Conversion source stream.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert mhtml source to pdf. Result is pdf file.
+            </summary>
+      <param name="sourcePath">Conversion mhtml source file path.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.PdfSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert mhtml source to pdf. Result is pdf file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(System.IO.Stream,Aspose.Html.Saving.ImageSaveOptions,System.String)">
       <summary>
             Convert mhtml source to image. Result is image file.
             </summary>
-      <param name="stream">Conversion source.</param>
+      <param name="stream">Conversion source stream.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(System.String,Aspose.Html.Saving.ImageSaveOptions,System.String)">
+      <summary>
+            Convert mhtml source to image. Result is image file.
+            </summary>
+      <param name="sourcePath">Conversion mhtml source file path.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(Aspose.Html.Url,Aspose.Html.Saving.ImageSaveOptions,System.String)">
+      <summary>
+            Convert mhtml source to image. Result is image file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
       <param name="options">Conversion options.</param>
       <param name="outputPath">Output file path.</param>
     </member>
@@ -6776,7 +7085,25 @@
       <summary>
             Convert mhtml source to image. Result is image file.
             </summary>
-      <param name="stream">Conversion source.</param>
+      <param name="stream">Conversion source stream.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.ImageSaveOptions,System.String)">
+      <summary>
+            Convert mhtml source to image. Result is image file.
+            </summary>
+      <param name="sourcePath">Conversion mhtml source file path.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="outputPath">Output file path.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.ImageSaveOptions,System.String)">
+      <summary>
+            Convert mhtml source to image. Result is image file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
       <param name="outputPath">Output file path.</param>
@@ -6785,20 +7112,52 @@
       <summary>
             Convert mhtml source to image. Result is image file.
             </summary>
-      <param name="stream">Conversion source.</param>
+      <param name="stream">Conversion source stream.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(System.String,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert mhtml source to image. Result is image file.
+            </summary>
+      <param name="sourcePath">Conversion mhtml source file path.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(Aspose.Html.Url,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert mhtml source to image. Result is image file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(System.IO.Stream,Aspose.Html.Configuration,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
       <summary>
             Convert mhtml source to image. Result is image file.
             </summary>
-      <param name="stream">Conversion source.</param>
+      <param name="stream">Conversion source stream.</param>
       <param name="configuration">The environment configuration.</param>
       <param name="options">Conversion options.</param>
-      <param name="provider">
-        <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> implementation.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(System.String,Aspose.Html.Configuration,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert mhtml source to image. Result is image file.
+            </summary>
+      <param name="sourcePath">Conversion mhtml source file path.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
+    </member>
+    <member name="M:Aspose.Html.Converters.Converter.ConvertMHTML(Aspose.Html.Url,Aspose.Html.Configuration,Aspose.Html.Saving.ImageSaveOptions,Aspose.Html.IO.ICreateStreamProvider)">
+      <summary>
+            Convert mhtml source to image. Result is image file.
+            </summary>
+      <param name="sourceUrl">The source URL.</param>
+      <param name="configuration">The environment configuration.</param>
+      <param name="options">Conversion options.</param>
+      <param name="provider">Implementation of the <see cref="T:Aspose.Html.IO.ICreateStreamProvider" /> interface, which will be used to get an output stream.</param>
     </member>
     <member name="T:Aspose.Html.Converters.TemplateData">
       <summary>
@@ -9093,6 +9452,16 @@
       <value>
             The message handlers.
             </value>
+    </member>
+    <member name="T:Aspose.Html.Services.IRuntimeService">
+      <summary>
+            This service is used to configure runtime related properties.
+            </summary>
+    </member>
+    <member name="P:Aspose.Html.Services.IRuntimeService.JavaScriptTimeout">
+      <summary>
+            Gets or sets <see cref="T:System.TimeSpan" /> which limits JavaScript execution time. If script is executed longer than provided <see cref="T:System.TimeSpan" />, it will be cancelled. You can specify infinite timeout by setting <see cref="T:System.TimeSpan" /> equal to -1 millisecond. Default value is 1 minute.
+            </summary>
     </member>
     <member name="T:Aspose.Html.Services.IService">
       <summary>

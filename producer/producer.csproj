@@ -6,55 +6,33 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="SkiaSharp" Version="2.88.3" />
-    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+    <PackageReference Include="SkiaSharp" Version="2.88.6" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Aspose.3D">
-      <HintPath>D:\New folder (2)\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.3D.dll</HintPath>
-    </Reference>
-    <Reference Include="Aspose.BarCode">
-      <HintPath>D:\New folder (2)\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.BarCode.dll</HintPath>
+      <HintPath>..\..\..\..\Users\FaraiChakarisa\Documents\Aspose\Aspose.3D-20.4\netstandard2.0\Aspose.3D.dll</HintPath>
     </Reference>
     <Reference Include="Aspose.CAD">
-      <HintPath>D:\New folder (2)\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.CAD.dll</HintPath>
+      <HintPath>..\..\..\..\Users\FaraiChakarisa\Documents\Aspose\Aspose.CAD.20.3(dll_only)\Bin\netstandard2.0\Aspose.CAD.dll</HintPath>
     </Reference>
     <Reference Include="Aspose.Cells">
-      <HintPath>D:\New folder (2)\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.Cells.dll</HintPath>
-    </Reference>
-    <Reference Include="Aspose.Email">
-      <HintPath>D:\New folder (2)\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.Email.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Aspose.GIS">
-      <HintPath>D:\New folder (2)\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.GIS.dll</HintPath>
+      <HintPath>..\..\..\..\Users\FaraiChakarisa\Documents\Aspose\Aspose.Cells_20.6\netstandard2.0\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="Aspose.HTML">
-      <HintPath>D:\New folder (2)\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.HTML.dll</HintPath>
-    </Reference>
-    <Reference Include="Aspose.Imaging">
-      <HintPath>D:\New folder (2)\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.Imaging.dll</HintPath>
-    </Reference>
-    <Reference Include="Aspose.Note">
-      <HintPath>D:\New folder (2)\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.Note.dll</HintPath>
-    </Reference>
-    <Reference Include="Aspose.Page">
-      <HintPath>D:\New folder (2)\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.Page.dll</HintPath>
+      <HintPath>..\..\..\..\Users\FaraiChakarisa\Documents\Aspose\Aspose.HTML_20.3\Bin\netstandard2.0\Aspose.HTML.dll</HintPath>
     </Reference>
     <Reference Include="Aspose.PDF">
-      <HintPath>D:\New folder (2)\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.PDF.dll</HintPath>
+      <HintPath>..\..\..\..\Users\FaraiChakarisa\Documents\Aspose\Aspose.PDF_20_3\Bin\netstandard2.1\Aspose.PDF.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.PSD">
+      <HintPath>..\..\..\..\Users\FaraiChakarisa\Documents\Aspose\Aspose.PSD.20.3(dlls_only)\netstandard2.0\Aspose.PSD.dll</HintPath>
     </Reference>
     <Reference Include="Aspose.Slides">
-      <HintPath>D:\New folder (2)\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.Slides.dll</HintPath>
-    </Reference>
-    <Reference Include="Aspose.SVG">
-      <HintPath>D:\New folder (2)\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.SVG.dll</HintPath>
-    </Reference>
-    <Reference Include="Aspose.Tasks">
-      <HintPath>D:\New folder (2)\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.Tasks.dll</HintPath>
+      <HintPath>..\..\..\..\Users\FaraiChakarisa\Documents\Aspose\Aspose.Slides.dll</HintPath>
     </Reference>
     <Reference Include="Aspose.Words">
-      <HintPath>D:\New folder (2)\Aspose.Total_dll_only_Downloadly.ir\netstandard2.0\Aspose.Words.dll</HintPath>
+      <HintPath>..\..\..\..\Users\FaraiChakarisa\Documents\Aspose\Aspose.Words.dll</HintPath>
     </Reference>
   </ItemGroup>
 

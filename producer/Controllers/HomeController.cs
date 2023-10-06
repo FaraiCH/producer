@@ -81,6 +81,11 @@ namespace producer.Controllers
             Worksheet worksheet = workbook.Worksheets[0];
 
             // Convert the JSON data to a two-dimensional object array
+            if (parsedJsonData == null)
+            {
+                Debug.WriteLine("Yes");
+            }
+        
             string[,] data = GetObjectArrayFromJson(parsedJsonData);
 
             // Populate the worksheet with the data
@@ -201,39 +206,9 @@ namespace producer.Controllers
             new Aspose.Slides.License().SetLicense(stream2);
             try
             {
-                using var presentation = new Presentation(basepath + fullName);
-                var doc = new Document();
-                var builder = new DocumentBuilder(doc);
-                foreach (var slide in presentation.Slides)
-                {
-                    // generates and inserts slide image
-                    using var bitmap = slide.GetThumbnail(1, 1);
-                    using var stream = new MemoryStream();
-                    bitmap.Save(stream, ImageFormat.Png);
-                    stream.Seek(0, SeekOrigin.Begin);
-                    using (SKBitmap skBitmap = SKBitmap.Decode(stream))
-                    {
-                        using (SKImage image = SKImage.FromBitmap(skBitmap))
-                        {
-                            using (SKData data = image.Encode())
-                            {
-                                byte[] imageByteArray = data.ToArray();
-
-                                builder.InsertImage(imageByteArray);
-                            }
-                        }
-                    }
-                    // inserts slide's texts
-                    foreach (var shape in slide.Shapes)
-                    {
-                        if (shape is AutoShape autoShape)
-                        {
-                            builder.Writeln(autoShape.TextFrame.Text);
-                        }
-                    }
-                    builder.InsertBreak(BreakType.PageBreak);
-                }
-                doc.Save("/var/www/html/imspulse/bunch-box/Power.docx");
+                Presentation presentation = new Presentation();
+         
+                presentation.Save("/test/Power.pptx", Aspose.Slides.Export.SaveFormat.Pptx);
                 return new JsonResult("Document Created Successfully");
             }
             catch (Exception ex)
